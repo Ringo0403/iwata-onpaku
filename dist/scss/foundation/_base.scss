@@ -1,0 +1,301 @@
+@use "./variables" as *;
+@use "./media" as *;
+@use "./mixin" as *;
+
+// ==========================================================================
+// Base Elements
+// ==========================================================================
+
+html {
+	font-size: 62.5%;
+	scroll-behavior: smooth;
+}
+
+body {
+	position: relative;
+	margin: 0;
+	@include noto-sans();
+	font-size: 10px;
+	font-weight: 300;
+	line-height: 1.6;
+	letter-spacing: 0;
+	-webkit-text-size-adjust: 100%;
+	color: $d_color;
+	background: $bg_color;
+	counter-reset: number 0;
+	animation: fadeIn 2s ease 0s 1 normal;
+}
+
+// モーダルウィンドウ
+body:has(.active) {
+	overflow: hidden;
+}
+
+@keyframes fadeIn {
+	0% { opacity: 0; }
+	100% { opacity: 1; }
+}
+
+* {
+	box-sizing: border-box;
+	&:focus {
+		outline: none;
+	}
+}
+
+a {
+	color: $link_color;
+	text-decoration: none;
+	@include transition;
+}
+
+p {
+	font-size:clamp(1.5rem, calc(1.408rem + 0.26vw), 1.6rem);
+	@include noto-sans();
+	font-weight: 300;
+	line-height: 1.8;
+	margin-bottom: 1em;
+	text-align: justify;  /* 両端揃え設定 */
+	text-justify: distribute; /* 両端揃え設定 */
+	word-break: break-all;
+	word-break: normal;
+	letter-spacing: .075em;
+}
+
+h2 {
+	@include Copperplate;
+	font-size: clamp(2.8rem, calc(0.123rem + 7.44vw), 5.7rem);
+	font-weight: 700;
+}
+
+h4 {
+	font-size: clamp(1.8rem, calc(1.667rem + 0.37vw), 2rem);
+	font-weight: 600;
+	margin-bottom: .5em;
+}
+
+
+
+// ==========================================================================
+// Components & Utilities
+// ==========================================================================
+
+
+.scroll-offset {
+	scroll-margin-top: 100px;
+}
+
+// 画像設定
+img {
+	vertical-align: middle;
+	max-width: 100%;
+	height: auto;
+	display: block;
+
+	&.alignleft, &.alignright, &.aligncenter {
+		display: block;
+		float: none;
+		margin: 0 auto 20px;
+	}
+
+	&.alignleft {
+		@include md {
+			float: left;
+			margin: 0 20px 20px 0;
+		}
+	}
+
+	&.alignright {
+		@include md {
+			float: right;
+			margin: 0 0 20px 20px;
+		}
+	}
+
+	&.alignnone {
+		clear: both;
+		display: block;
+		float: none;
+		margin: 0 0 20px;
+	}
+}
+
+hr {
+	border: none;
+	border-top: solid 1px $d_color;
+	margin: 0 0 60px;
+	padding: 0;
+	@include md {
+		margin-bottom: 80px;
+	}
+}
+
+section {
+	margin-bottom: 64px;
+	@include lg { // 修正済み
+		margin-bottom: 120px;
+	}
+}
+
+// ==========================================================================
+// Layout
+// ==========================================================================
+
+.container {
+	width: 100%;
+	margin: 0 auto;
+	padding-left: 4%; // 分割して記述（優先順位を維持）
+	padding-right: 4%;
+
+	@include md {
+		// max-width: 768px;
+		padding-left: 3%;
+		padding-right: 6%;
+	}
+	@include lg {
+		max-width: 1024px;
+		padding-left: 4%;
+		padding-right: 8%;
+	}
+	@include xl {
+		max-width: 1280px;
+		padding-right: 6%;
+	}
+	@include xxl {
+		max-width: 1536px;
+		// padding-right: 4%;
+	}
+}
+
+.container-fluid {
+	padding-left: 4%;
+	padding-right: 4%;
+	@include lg {
+		padding-left: 0;
+		padding-right: 0;
+	}
+}
+
+// ==========================================================================
+// Navigation
+// ==========================================================================
+
+.pager--single {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	@include noto-sans();
+	font-size: clamp(1.5rem, calc(1.464rem + 0.18vw), 1.6rem);
+	font-weight: 400;
+
+	a {
+		display: block;
+		position: relative;
+		color: $d_color;
+		text-decoration: none;
+		@include transition;
+		&:hover { color: $key_color; }
+	}
+
+	li {
+		&.prev a {
+			padding-left: 2em;
+			&::before {
+				font: var(--fa-font-solid);
+				content: "\f053";
+				font-size: 2em;
+				position: absolute;
+				top: 50%;
+				left: 0;
+				transform: translateY(-50%);
+			}
+		}
+		&.next a {
+			padding-right: 2em;
+			&::after {
+				font: var(--fa-font-solid);
+				content: "\f054";
+				font-size: 2em;
+				position: absolute;
+				top: 50%;
+				right: 0;
+				transform: translateY(-50%);
+			}
+		}
+		&.back a {
+			padding-right: 2em;
+			&::after {
+				font: var(--fa-font-solid);
+				content: "\f148";
+				font-size: 1.5em;
+				position: absolute;
+				top: 0;
+				right: 0;
+			}
+		}
+	}
+}
+
+#pagenation {
+	text-align: center;
+	margin-bottom: 64px;
+	@include lg { margin-bottom: 120px; }
+
+	&::after {
+		content: ".";
+		display: block;
+		clear: both;
+		height: 0;
+		visibility: hidden;
+	}
+
+	#pagenation-list {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		gap: 8px;
+		margin: 0;
+		padding: 0;
+		list-style: none;
+
+		a, span {
+			display: block;
+			padding: 6px 13px;
+			font-size: 1.4rem;
+			line-height: 1.5;
+			color: #042A32;
+			text-decoration: none;
+		}
+
+		.current {
+			background: #042A32;
+			color: #FFFFFF;
+			@include kadomaru(999px);
+		}
+
+		.omit { padding: 6px 2px; }
+
+		a:hover {
+			cursor: pointer;
+			&:not(.prev):not(.next) {
+				background: #042A32;
+				color: #FFFFFF;
+				@include kadomaru(999px);
+			}
+		}
+
+		a.prev, a.next {
+			font-size: 2.8rem;
+			line-height: 1;
+			padding: 0;
+			&:hover {
+				background: none;
+				color: #042A32;
+			}
+		}
+	}
+}

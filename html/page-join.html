@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="format-detection" content="telephone=no, address=no">
+	<title>Document</title>
+
+	<!-- reset.css ress -->
+	<link rel="stylesheet" href="../dist/css/ress.min.css">
+	<link rel="stylesheet" href="../dist/css/styles.css">
+	<!-- fontawesome -->
+	<link rel="stylesheet" href="../dist/css/all.min.css">
+
+	<!-- slick -->
+	<link rel="stylesheet" href="../dist/css/slick.css">
+	<link rel="stylesheet" href="../dist/css/slick-theme.css">
+
+	<!-- MODAL -->
+	<link rel="stylesheet" href="../dist/css/modaal.min.css">
+
+	<!-- adobe fonts -->
+	<script>
+	  (function(d) {
+		var config = {
+		  kitId: 'vrf2sqn',
+		  scriptTimeout: 3000,
+		  async: true
+		},
+		h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+	  })(document);
+	</script>
+</head>
+
+<body>
+	<!-- layout wraapper -->
+	<div class="c-layout">
+		<!--header & nav -->
+		<div class="header">
+			<!-- header wrap -->
+			<div class="l-header-wrap">
+				<header class="container">
+					<h1><a href="#" title="いわたおんぱく"><img src="../images/common/logo.svg" alt="いわたおんぱく"></a></h1>
+					<!-- nav -->
+					<nav class="u-only--pc">
+						<ul class="l-btn-nav">
+							<li><a href="#" title="会員登録"><img src="../images/common/btn-regist.png" alt="会員登録"></a></li>
+							<li><a href="#" title="ログイン"><img src="../images/common/btn-login.png" alt="ログイン"></a></li>
+						</ul>
+						<ul class="l-main-nav">
+							<li><a href="#">プログラム一覧</a></li>
+							<li><a href="#">いわたおんぱくとは</a></li>
+							<li><a href="#">プログラムに参加するには</a></li>
+						</ul>
+						<ul class="l-sub-nav">
+							<li class="icon-conditions"><a href="#">プログラム実施条件</a></li>
+							<li class="icon-book"><a href="#">パンフレット</a></li>
+							<li class="icon-faq"><a href="#">よくある質問</a></li>
+							<li class="icon-report"><a href="#">過去の開催リポート</a></li>
+						</ul>
+						<form action="#" class="search-form-3">
+							<label>
+								<input type="text" placeholder="キーワードを入力">
+							</label>
+							<button type="submit" aria-label="検索"></button>
+						</form>
+					</nav>
+
+					<!-- モバイルメニュー -->
+					<div class="openbtn">
+						<img src="../images/common/open-btn.svg" alt="menu">
+						<span></span>
+						<span></span>
+					</div>
+					<nav class="u-only--sp" id="g-nav">
+						<div id="g-nav-list"><!--ナビの数が増えた場合縦スクロールするためのdiv※不要なら削除-->
+						<h1><a href="#" title="いわたおんぱく"><img src="../images/common/logo.svg" alt="いわたおんぱく"></a></h1>
+							<ul class="l-btn-nav--sp">
+								<li><a href="#" title="会員登録"><img src="../images/common/btn-regist.png" alt="会員登録"></a></li>
+								<li><a href="#" title="ログイン"><img src="../images/common/btn-login.png" alt="ログイン"></a></li>
+							</ul>
+							<ul class="l-main-nav--sp">
+								<li class="has-child"><a href="#">プログラム一覧</a>
+									<ul>
+										<li><a href="#" title="">いわたおんぱくスペシャル</a></li>
+										<li><a href="#" title="">ちょっとアドベンチャー</a></li>
+										<li><a href="#" title="">いわたの歴史を紐解くプログラム</a></li>
+										<li><a href="#" title="">ミュージアム・セレクション２選＆創作ラボ</a></li>
+										<li><a href="#" title="">スポーツ＆体験型交流プログラム</a></li>
+										<li><a href="#" title="">ウェルビーイング＆ウェルネス体験</a></li>
+										<li><a href="#" title="">学び・活用・育てるセミナー</a></li>
+										<li><a href="#" title="">地元レストラン＆カフェの挑戦</a></li>
+									</ul>
+								</li>
+								<li><a href="#">いわたおんぱくとは</a></li>
+								<li><a href="#">プログラムに参加するには</a></li>
+								<li><a href="#">Contact</a></li>
+							</ul>
+							<ul class="l-sub-nav--sp">
+								<li class="icon-conditions"><a href="#">プログラム実施条件</a></li>
+								<li class="icon-book"><a href="#">パンフレット</a></li>
+								<li class="icon-faq"><a href="#">よくある質問</a></li>
+								<li class="icon-report"><a href="#">過去の開催リポート</a></li>
+							</ul>
+							<div class="l-banner--sp">
+								<a href="#" title="プログラムパートナー"><img src="../images/common/banner-partner.png" alt="プログラムパートナー"></a>
+							</div>
+						</div>
+					</nav>
+					<!-- // END モバイルメニュー -->
+					<!-- // END nav -->
+				</header>
+
+				<div class="l-banner">
+					<a href="#" title="プログラムパートナー"><img src="../images/common/banner-partner.png" alt="プログラムパートナー"></a>
+				</div>
+			</div>
+			<!-- // END header wrap -->
+		</div>
+		<!--// END header & nav -->
+		<!-- main -->
+		<main class="main">
+			<!-- パンくず -->
+			<div class="pankuzu container">
+				<ul>
+					<li><a href="#" title="トップ">TOP</a></li>
+					<li>プログラムに参加するには</li>
+				</ul>
+			</div>
+			<!-- // END パンくず -->
+
+			<section class="container">
+				<h2 class="u-h2--primary u-mb--120">steps to join<span>プログラムに参加するには</span></h2>
+				<div class="c-box-bg--gray p-join-box">
+					<div class="u-align--center p-minus">
+						<h3 class="u-h3-fukidasi">いわたおんぱくのプログラム参加には〔事前のお申込み〕が必要です</h3>
+					</div>
+					<p class="u-align-sp-only">プログラムへの参加申込方法はプログラムによって異なります。<br>各プログラムの指定する方法でお申込みください</p>
+
+					<div class="c-box-base-color u-mb--3">
+						<dl class="p-uketsuke">
+							<dt>おんぱく 申込受付開始</dt>
+							<dd>2025年10月4日（土）午前9：00〜</dd>
+						</dl>
+					</div>
+					<p class="u-notice u-mb--5">注）『プログラム・パートナーへ電話で申し込むプログラム』に限り、10/8(火)がプログラム・パートナーの休業日にあたる場合には、10/9(水)以降に最初に迎える営業日が申込開始日となります。事前に各プログラム・パートナーにご確認ください。</p>
+
+					<div class="c-box-base-color u-mb--6">
+						<h3 class="u-h3--borderbottom">おんぱくプログラムは｢いわたおんぱく公式サイト」から!</h3>
+						<ul class="u-list--blueDisc">
+							<li><span>プログラムの閲覧，検索に便利！</span></li>
+							<li><span>いわたおんぱくの最新情報や「お知らせ」を発信！</span></li>
+							<li><span>公式サイトから予約・取消が可能！</span>プログラムが『公式サイトからの予約』を指定している場合は、「会員登録」をお願いします。<br>予約や取消が24時間可能となります。</li>
+							<li><span>会員登録で次回以降の「いわたおんぱく」の情報を真っ先にお届け！</span></li>
+						</ul>
+					</div>
+
+					<h3 class="u-h3-w-border">磐田市観光協会のＳＮＳで情報発信！</h3>
+					<div class="c-grid--3 u-mb--6">
+						<div class="item1">
+							<ul class="u-link-list">
+								<li><a href="#" target="_blank">いわたおんぱくインスタグラム</a></li>
+								<li><a href="#" target="_blank">磐田市観光協会インスタグラム</a></li>
+							</ul>
+						</div>
+						<div class="item2">
+							<ul class="u-link-list">
+								<li><a href="#" target="_blank">磐田市観光協会ホームページ</a></li>
+								<li><a href="#" target="_blank">磐田市観光協会フェイスブック</a></li>
+							</ul>
+						</div>
+						<div class="item3">
+							<ul class="u-link-list">
+								<li><a href="#" target="_blank">クールジャパンビデオ</a><span>磐田の情報を世界に発信！<br>クールジャパンビデオは210の国と地域からのアクセスがあります</span></li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="c-box-base-color u-mb--6">
+						<h3 class="u-h3--borderbottom">＜用語の説明＞プログラム内で使用する用語について</h3>
+						<table class="c-table--dotted u-mb--0">
+							<tr>
+								<th><span>プログラム</span></th>
+								<td>いわたおんぱくで募集する「おんぱくプログラム（商品）」のことです。</td>
+							</tr>
+							<tr>
+								<th><span>プログラム・パートナー</span></th>
+								<td>プログラムを企画し実施（催行）する事業者や個人のことです。</td>
+							</tr>
+							<tr>
+								<th><span>最少催行人員</span></th>
+								<td>プログラムの実施（催行）に必要な最低人数のことです。</td>
+							</tr>
+							<tr>
+								<th><span>標準モデル取消規定</span></th>
+								<td>お客様のご都合でプログラムのお申込を取消す際、[プログラムが適用する「標準の取消(キャンセル)規定」]のことです。<br>裏表紙の「おんぱくプログラム実施条件」の「第7項」で取消（キャンセル）についての規定をご確認ください。<br>尚、プログラム・パートナーが独自に設定する取消規程は各プログラム欄で示します。</td>
+							</tr>
+							<tr>
+								<th><span>キャンセル料：設定無し</span></th>
+								<td>お客様のご都合でプログラムのお申込を取消しする際に、「取消料（キャンセル料）」を申し受けないプログラムです。</td>
+							</tr>
+							<tr>
+								<th><span>旅行商品</span></th>
+								<td>プログラムが「旅行契約」を伴う商品であることを示します。旅行商品については、「おんぱく実施条件書」は適用されず、プログラム・パートナーである当該旅行会社の「旅行業約款」、および当該商品の「旅行取引条件書」が適用となります。</td>
+							</tr>
+						</table>
+					</div>
+
+					<div class="c-grid c-gap32-48 u-add--w-border">
+						<div class="u-span-3">
+							<img src="../images/content/iwata-kokokara-labo.png" alt="磐田ここからラボ" class="c-img--center u-w-80">
+						</div>
+						<div class="u-span-9">
+							<h4>磐田ここからラボとは？</h4>
+							<p class="u-mb--0">新たな知識との出会いや、文化・芸術など感性に触れる豊かな体験は、世代に関係なく常に胸を躍らせるものです。「磐田ここからラボ」は「校舎のない学び舎」をコンセプトに、多くの市民が多様な学びを楽しみ、対話を通じて人と人との交流が生まれることを目指して、さまざまな取り組みを行っていきます。「磐田ここからラボ」をきっかけに学びの交流が波紋のように広り、市内外の多様な人材を引きつけることで「人が集まる磐田市」の実現を目指していきます。</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+
+		</main>
+		<!-- // END main -->
+	</div>
+	<!-- // layout wraapper -->
+
+	<!-- footer -->
+	<div id="footer-area" class="footer">
+		<footer>
+			<div class="f-logo"><a href="#" title="いわたおんぱく"><img src="../images/common/logo.svg" alt="いわたおんぱ"></a></div>
+			<div class="f-nav1">
+				<ul>
+					<li><a href="#" title="おんぱくとは">おんぱくとは</a></li>
+					<li><a href="#" title="プログラム">プログラム</a></li>
+					<li><a href="#" title="パンフレットダウンロード">パンフレットダウンロード</a></li>
+					<li><a href="#" titile="プログラムに参加するには">	プログラムに参加するには</a></li>
+				</ul>
+			</div>
+			<div class="f-nav2">
+				<ul>
+					<li><a href="#" title="おんぱくとは">実施条件</a></li>
+					<li><a href="#" title="パンフレットダウンロード">よくある質問</a></li>
+					<li><a href="#" titile="プログラムに参加するには">	お知らせ</a></li>
+				</ul>
+			</div>
+			<div class="f-login">
+				<ul>
+					<li><a href="#" title="会員登録"><img src="../images/common/btn-regist-footer.svg" alt="会員登録"></a></li>
+					<li><a href="#" title="ログイン"><img src="../images/common/btn-login-footer.svg" alt="ログイン"></a></li>
+				</ul>
+			</div>
+		</footer>
+
+		<div class="copy">©Iwata ONpaku</div>
+	</div>
+	<!--  // END footer -->
+
+	<div class="p-tategaki">
+		<p>いわた温故知新博覧会</p>
+	</div>
+
+
+	<!-- modal -->
+	<div class="p-prg-search" id="prg">
+		<form method="GET" action="">
+		  <fieldset class="p-search">
+			  <ul class="p-search__cate">
+				  <li>カテゴリ</li>
+				  <li><label><input type="checkbox" name="genre[]" value="歴史 文化ツア">歴史 文化ツアー</label></li>
+				  <li><label><input type="checkbox" name="genre[]" value="グルメ・スイーツ">グルメ・スイーツ</label></li>
+				  <li><label><input type="checkbox" name="genre[]" value="学ぶ">学ぶ</label></li>
+				  <li><label><input type="checkbox" name="genre[]" value="oアート・クラフト">アート・クラフト</label></li>
+				  <li><label><input type="checkbox" name="genre[]" value="スポーツ">スポーツ</label></li>
+		  </fieldset>
+
+		  <fieldset class="p-search">
+			  <ul class="p-search__keyword">
+				  <li>キーワード</li>
+				  <li><label><input type="checkbox" name="keyword[]" value="観光体験"><span>観光体験</span></label></li>
+				  <li><label><input type="checkbox" name="keyword[]" value="ワークショップ"><span>ワークショップ</span></label></li>
+				  <li><label><input type="checkbox" name="keyword[]" value="飲食店"><span>飲食店</span></label></li>
+				  <li><label><input type="checkbox" name="keyword[]" value="グリーンツーリズム"><span>グリーンツーリズム</span></label></li>
+			  </ul>
+		  </fieldset>
+		  <div class="p-search__btn">
+			<button type="reset" class="reset-button">リセット</button>
+			<button type="submit" class="search-button">検索</button>
+		  </div>
+		</form>
+	</div>
+	<!-- // END modal -->
+
+
+	<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+	<script src="../dist/js/menu.js"></script>
+	<!-- slick -->
+	<script src="../dist/js/slick.min.js"></script>
+	<script src="../dist/js/slide.js"></script>
+
+	<script src="../dist/js/init.js" defer></script>
+
+	<!-- accordion -->
+	<script src="../dist/js/accordion_init.js"></script>
+	<!-- modal -->
+	<script src="../dist/js/modaal.min.js"></script>
+	<script src="../dist/js/modal_ini.js"></script>
+</body>
+
+</html>

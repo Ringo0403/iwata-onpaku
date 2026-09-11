@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="format-detection" content="telephone=no, address=no">
+	<title>Document</title>
+
+	<!-- reset.css ress -->
+	<link rel="stylesheet" href="../dist/css/ress.min.css">
+	<link rel="stylesheet" href="../dist/css/styles.css">
+	<!-- fontawesome -->
+	<link rel="stylesheet" href="../dist/css/all.min.css">
+
+	<!-- slick -->
+	<link rel="stylesheet" href="../dist/css/slick.css">
+	<link rel="stylesheet" href="../dist/css/slick-theme.css">
+
+	<!-- MODAL -->
+	<link rel="stylesheet" href="../dist/css/modaal.min.css">
+
+	<!-- adobe fonts -->
+	<script>
+	  (function(d) {
+		var config = {
+		  kitId: 'vrf2sqn',
+		  scriptTimeout: 3000,
+		  async: true
+		},
+		h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+	  })(document);
+	</script>
+</head>
+
+<body>
+	<!-- layout wraapper -->
+	<div class="c-layout">
+		<!--header & nav -->
+		<div class="header">
+			<!-- header wrap -->
+			<div class="l-header-wrap">
+				<header class="container">
+					<h1><a href="#" title="いわたおんぱく"><img src="../images/common/logo.svg" alt="いわたおんぱく"></a></h1>
+					<!-- nav -->
+					<nav class="u-only--pc">
+						<ul class="l-btn-nav">
+							<li><a href="#" title="会員登録"><img src="../images/common/btn-regist.png" alt="会員登録"></a></li>
+							<li><a href="#" title="ログイン"><img src="../images/common/btn-login.png" alt="ログイン"></a></li>
+						</ul>
+						<ul class="l-main-nav">
+							<li><a href="#">プログラム一覧</a></li>
+							<li><a href="#">いわたおんぱくとは</a></li>
+							<li><a href="#">プログラムに参加するには</a></li>
+						</ul>
+						<ul class="l-sub-nav">
+							<li class="icon-conditions"><a href="#">プログラム実施条件</a></li>
+							<li class="icon-book"><a href="#">パンフレット</a></li>
+							<li class="icon-faq"><a href="#">よくある質問</a></li>
+							<li class="icon-report"><a href="#">過去の開催リポート</a></li>
+						</ul>
+						<form action="#" class="search-form-3">
+							<label>
+								<input type="text" placeholder="キーワードを入力">
+							</label>
+							<button type="submit" aria-label="検索"></button>
+						</form>
+					</nav>
+					
+					<!-- モバイルメニュー -->
+					<div class="openbtn">
+						<img src="../images/common/open-btn.svg" alt="menu">
+						<span></span>
+						<span></span>
+					</div>
+					<nav class="u-only--sp" id="g-nav">
+						<div id="g-nav-list"><!--ナビの数が増えた場合縦スクロールするためのdiv※不要なら削除-->
+						<h1><a href="#" title="いわたおんぱく"><img src="../images/common/logo.svg" alt="いわたおんぱく"></a></h1>
+							<ul class="l-btn-nav--sp">
+								<li><a href="#" title="会員登録"><img src="../images/common/btn-regist.png" alt="会員登録"></a></li>
+								<li><a href="#" title="ログイン"><img src="../images/common/btn-login.png" alt="ログイン"></a></li>
+							</ul>
+							<ul class="l-main-nav--sp">
+								<li class="has-child"><a href="#">プログラム一覧</a>
+									<ul>
+										<li><a href="#" title="">いわたおんぱくスペシャル</a></li>
+										<li><a href="#" title="">ちょっとアドベンチャー</a></li>
+										<li><a href="#" title="">いわたの歴史を紐解くプログラム</a></li>
+										<li><a href="#" title="">ミュージアム・セレクション２選＆創作ラボ</a></li>
+										<li><a href="#" title="">スポーツ＆体験型交流プログラム</a></li>
+										<li><a href="#" title="">ウェルビーイング＆ウェルネス体験</a></li>
+										<li><a href="#" title="">学び・活用・育てるセミナー</a></li>
+										<li><a href="#" title="">地元レストラン＆カフェの挑戦</a></li>
+									</ul>
+								</li> 
+								<li><a href="#">いわたおんぱくとは</a></li> 
+								<li><a href="#">プログラムに参加するには</a></li> 
+								<li><a href="#">Contact</a></li> 
+							</ul>
+							<ul class="l-sub-nav--sp">
+								<li class="icon-conditions"><a href="#">プログラム実施条件</a></li>
+								<li class="icon-book"><a href="#">パンフレット</a></li>
+								<li class="icon-faq"><a href="#">よくある質問</a></li>
+								<li class="icon-report"><a href="#">過去の開催リポート</a></li>
+							</ul>
+							<div class="l-banner--sp">
+								<a href="#" title="プログラムパートナー"><img src="../images/common/banner-partner.png" alt="プログラムパートナー"></a>
+							</div>
+						</div>					
+					</nav>
+					<!-- // END モバイルメニュー -->
+					<!-- // END nav -->
+				</header>
+				
+				<div class="l-banner">
+					<a href="#" title="プログラムパートナー"><img src="../images/common/banner-partner.png" alt="プログラムパートナー"></a>
+				</div>
+			</div>
+			<!-- // END header wrap -->
+		</div>
+		<!--// END header & nav -->
+		<!-- main -->
+		<main class="main">
+			<!-- パンくず -->
+			<div class="pankuzu container">
+				<ul>
+					<li><a href="#" title="トップ">TOP</a></li>
+					<li>いわたおんぱくとは？</li>
+				</ul>
+			</div>
+			<!-- // END パンくず -->
+			
+			<section class="container">
+				<h3 class="h3-center-keycolor">What is Iwata ON-paku?</h3>
+				<div class="p-concept-bg">
+					<h4 class="u-h4-center--blue">いわたおんぱくとは？</h4>
+					<p class="u-align-sp-only u-mb--0">“いわたおんぱく”とは、「いわた温故知新博覧会」の略称です。</p>
+					<p class="u-align-sp-only u-br-none">磐田の育んできた文化や歴史、自然、特色ある産業や個店のサービス、<br>人の魅力やライフスタイルなどの「地域資源」を題材に、<br>“おんぱくプログラム”（小規模な体験プログラムやゼミナール等）として企画・編集し、<br>「博覧会」の名のもとに市内全域で実施する観光振興イベントです。</p>
+				</div>
+				
+				<article class="p-concept-box">
+					<h2 class="concept-title blue">01<br>温故知新！</h2>
+					<img src="../images/content/concept-01.jpg">
+					<div class="text-box">
+						<h3 class="h3_highlight">“今あるもの”から<br>“新しい価値”を創出！</h3>
+						<p>引き継がれてれてきた様々な「地域資源」の価値を見つめ直し、訪れる方々にとって新たな「体験価値」に転換していく試みです。脈々と流れる“土地の物語”を感じてみませんか？</p>
+					</div>
+				</article>
+				
+				<article class="p-concept-box">
+					<h2 class="concept-title key_color">02<br>非日常から生活空間へ！</h2>
+					<img src="../images/content/concept-02.jpg">
+					<div class="text-box">
+						<h3 class="h3_highlight">感動から<br>感心・共感へ！</h3>
+						<p>「非日常（感動・満足）型」の観光・余暇スタイルから、「地域の生活エリアでの交流と人とのふれあい（感心、共感）型」へ。“日常生活のちょっと先“にある余暇の空間と時間がかけがえのないものになっていきます！</p>
+					</div>
+				</article>
+				
+				<article class="p-concept-box">
+					<h2 class="concept-title blue">03<br>磐田ファンづくり！</h2>
+					<img src="../images/content/concept-03.jpg">
+					<div class="text-box">
+						<h3 class="h3_highlight">関係性進化への<br>スタートライン</h3>
+						<p>磐田に根付く生活文化、産業や携わる人に魅力を感じたり、共感したり、従来とは違う特別な地域への好奇心など、お客様ご自身も情報発信したくなるような双方向型の関係性を気づけるスタートラインになれば！という思いです。</p>
+					</div>
+				</article>
+				
+				<article class="p-concept-box">
+					<h2 class="concept-title key_color">04<br>みんなで一緒に新しい<br>磐田の魅力を作り上げよう！</h2>
+					<img src="../images/content/concept-04.jpg">
+					<div class="text-box">
+						<h3 class="h3_highlight">人と人が作り出す<br>ストーリー</h3>
+						<p>プログラムを企画し実施するプログラム・パートナー、体験する参加者の方々、訪れた人を受け入れるまちの人、開催を支えてくれる方々、磐田での時間と空間の中で人と人のつながりを感じてみましょう！</p>
+					</div>
+				</article>
+				
+				
+				
+			</section>		
+			
+			
+		</main>
+		<!-- // END main -->		
+	</div>
+	<!-- // layout wraapper -->
+	
+	<!-- footer -->
+	<div id="footer-area" class="footer">
+		<footer>
+			<div class="f-logo"><a href="#" title="いわたおんぱく"><img src="../images/common/logo.svg" alt="いわたおんぱ"></a></div>
+			<div class="f-nav1">
+				<ul>
+					<li><a href="#" title="おんぱくとは">おんぱくとは</a></li>
+					<li><a href="#" title="プログラム">プログラム</a></li>
+					<li><a href="#" title="パンフレットダウンロード">パンフレットダウンロード</a></li>
+					<li><a href="#" titile="プログラムに参加するには">	プログラムに参加するには</a></li>
+				</ul>
+			</div>
+			<div class="f-nav2">
+				<ul>
+					<li><a href="#" title="おんぱくとは">実施条件</a></li>
+					<li><a href="#" title="パンフレットダウンロード">よくある質問</a></li>
+					<li><a href="#" titile="プログラムに参加するには">	お知らせ</a></li>
+				</ul>
+			</div>
+			<div class="f-login">
+				<ul>
+					<li><a href="#" title="会員登録"><img src="../images/common/btn-regist-footer.svg" alt="会員登録"></a></li>
+					<li><a href="#" title="ログイン"><img src="../images/common/btn-login-footer.svg" alt="ログイン"></a></li>
+				</ul>
+			</div>
+		</footer>
+		
+		<div class="copy">©Iwata ONpaku</div>
+	</div>
+	<!--  // END footer -->
+	
+	<div class="p-tategaki">
+		<p>いわた温故知新博覧会</p>
+	</div>
+	
+
+	<!-- modal -->
+	<div class="p-prg-search" id="prg">
+		<form method="GET" action="">
+		  <fieldset class="p-search">
+			  <ul class="p-search__cate">
+				  <li>カテゴリ</li>
+				  <li><label><input type="checkbox" name="genre[]" value="歴史 文化ツア">歴史 文化ツアー</label></li>
+				  <li><label><input type="checkbox" name="genre[]" value="グルメ・スイーツ">グルメ・スイーツ</label></li>
+				  <li><label><input type="checkbox" name="genre[]" value="学ぶ">学ぶ</label></li>
+				  <li><label><input type="checkbox" name="genre[]" value="oアート・クラフト">アート・クラフト</label></li>
+				  <li><label><input type="checkbox" name="genre[]" value="スポーツ">スポーツ</label></li>
+		  </fieldset>
+		
+		  <fieldset class="p-search">
+			  <ul class="p-search__keyword">
+				  <li>キーワード</li>
+				  <li><label><input type="checkbox" name="keyword[]" value="観光体験"><span>観光体験</span></label></li>
+				  <li><label><input type="checkbox" name="keyword[]" value="ワークショップ"><span>ワークショップ</span></label></li>
+				  <li><label><input type="checkbox" name="keyword[]" value="飲食店"><span>飲食店</span></label></li>
+				  <li><label><input type="checkbox" name="keyword[]" value="グリーンツーリズム"><span>グリーンツーリズム</span></label></li>
+			  </ul>
+		  </fieldset>
+		  <div class="p-search__btn">
+			<button type="reset" class="reset-button">リセット</button>
+			<button type="submit" class="search-button">検索</button>
+		  </div>
+		</form>
+	</div>
+	<!-- // END modal -->
+	
+	
+	<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+	<script src="../dist/js/menu.js"></script>
+	<!-- slick -->
+	<script src="../dist/js/slick.min.js"></script>
+	<script src="../dist/js/slide.js"></script>
+
+	<script src="../dist/js/init.js" defer></script>
+	
+	<!-- accordion -->
+	<script src="../dist/js/accordion_init.js"></script>
+	<!-- modal -->
+	<script src="../dist/js/modaal.min.js"></script>
+	<script src="../dist/js/modal_ini.js"></script>
+</body>
+
+</html>

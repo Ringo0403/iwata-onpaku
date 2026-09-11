@@ -1,0 +1,41 @@
+@use "../foundation" as *;
+
+.l-header-wrap {
+	@include lg {
+		position: sticky;
+		top: 0;
+		margin-bottom: 120px;
+	}
+}
+
+header {
+	padding-top: 8px;
+
+	h1 {
+		margin-bottom: 20px;
+
+		img {
+			width: auto; // 修正
+			height: 62px;
+			margin-left: auto;
+			margin-right: auto;
+			display: block; // 追加（margin:autoを確実に効かせるため）
+		}
+	}
+
+	@include lg {
+		padding: 16px 40px 64px; // ここが効くように、変な省略をせずそのまま記述
+
+		h1 {
+			margin-bottom: 32px;
+
+			img {
+				width: 80%;
+				height: auto;
+				margin-left: auto;
+				margin-right: auto;
+				display: block;
+			}
+		}
+	}
+}

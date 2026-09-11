@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="format-detection" content="telephone=no, address=no">
+	<title>Document</title>
+
+	<!-- reset.css ress -->
+	<link rel="stylesheet" href="../dist/css/ress.min.css">
+	<link rel="stylesheet" href="../dist/css/styles.css">
+	<!-- fontawesome -->
+	<link rel="stylesheet" href="../dist/css/all.min.css">
+
+	<!-- slick -->
+	<link rel="stylesheet" href="../dist/css/slick.css">
+	<link rel="stylesheet" href="../dist/css/slick-theme.css">
+
+	<!-- swiper -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+	<!-- MODAL -->
+	<link rel="stylesheet" href="../dist/css/modaal.min.css">
+
+	<!-- adobe fonts -->
+	<script>
+	  (function(d) {
+		var config = {
+		  kitId: 'vrf2sqn',
+		  scriptTimeout: 3000,
+		  async: true
+		},
+		h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+	  })(document);
+	</script>
+</head>
+
+<body>
+	<!-- layout wraapper -->
+	<div class="c-layout">
+		<!--header & nav -->
+		<div class="header">
+			<!-- header wrap -->
+			<div class="l-header-wrap">
+				<header class="container">
+					<h1><a href="#" title="いわたおんぱく"><img src="../images/common/logo.svg" alt="いわたおんぱく"></a></h1>
+					<!-- nav -->
+					<nav class="u-only--pc">
+						<ul class="l-btn-nav">
+							<li><a href="#" title="会員登録"><img src="../images/common/btn-regist.png" alt="会員登録"></a></li>
+							<li><a href="#" title="ログイン"><img src="../images/common/btn-login.png" alt="ログイン"></a></li>
+						</ul>
+						<ul class="l-main-nav">
+							<li><a href="#">プログラム一覧</a></li>
+							<li><a href="#">いわたおんぱくとは</a></li>
+							<li><a href="#">プログラムに参加するには</a></li>
+						</ul>
+						<ul class="l-sub-nav">
+							<li class="icon-conditions"><a href="#">プログラム実施条件</a></li>
+							<li class="icon-book"><a href="#">パンフレット</a></li>
+							<li class="icon-faq"><a href="#">よくある質問</a></li>
+							<li class="icon-report"><a href="#">過去の開催リポート</a></li>
+						</ul>
+						<form action="#" class="search-form-3">
+							<label>
+								<input type="text" placeholder="キーワードを入力">
+							</label>
+							<button type="submit" aria-label="検索"></button>
+						</form>
+					</nav>
+
+					<!-- モバイルメニュー -->
+					<div class="openbtn">
+						<img src="../images/common/open-btn.svg" alt="menu">
+						<span></span>
+						<span></span>
+					</div>
+					<nav class="u-only--sp" id="g-nav">
+						<div id="g-nav-list"><!--ナビの数が増えた場合縦スクロールするためのdiv※不要なら削除-->
+						<h1><a href="#" title="いわたおんぱく"><img src="../images/common/logo.svg" alt="いわたおんぱく"></a></h1>
+							<ul class="l-btn-nav--sp">
+								<li><a href="#" title="会員登録"><img src="../images/common/btn-regist.png" alt="会員登録"></a></li>
+								<li><a href="#" title="ログイン"><img src="../images/common/btn-login.png" alt="ログイン"></a></li>
+							</ul>
+							<ul class="l-main-nav--sp">
+								<li class="has-child"><a href="#">プログラム一覧</a>
+									<ul>
+										<li><a href="#" title="">いわたおんぱくスペシャル</a></li>
+										<li><a href="#" title="">ちょっとアドベンチャー</a></li>
+										<li><a href="#" title="">いわたの歴史を紐解くプログラム</a></li>
+										<li><a href="#" title="">ミュージアム・セレクション２選＆創作ラボ</a></li>
+										<li><a href="#" title="">スポーツ＆体験型交流プログラム</a></li>
+										<li><a href="#" title="">ウェルビーイング＆ウェルネス体験</a></li>
+										<li><a href="#" title="">学び・活用・育てるセミナー</a></li>
+										<li><a href="#" title="">地元レストラン＆カフェの挑戦</a></li>
+									</ul>
+								</li>
+								<li><a href="#">いわたおんぱくとは</a></li>
+								<li><a href="#">プログラムに参加するには</a></li>
+							</ul>
+							<ul class="l-sub-nav--sp">
+								<li class="icon-conditions"><a href="#">プログラム実施条件</a></li>
+								<li class="icon-book"><a href="#">パンフレット</a></li>
+								<li class="icon-faq"><a href="#">よくある質問</a></li>
+								<li class="icon-report"><a href="#">過去の開催リポート</a></li>
+							</ul>
+							<div class="l-banner--sp">
+								<a href="#" title="プログラムパートナー"><img src="../images/common/banner-partner.png" alt="プログラムパートナー"></a>
+							</div>
+						</div>
+					</nav>
+					<!-- // END モバイルメニュー -->
+					<!-- // END nav -->
+					<div class="l-banner">
+						<a href="#" title="プログラムパートナー"><img src="../images/common/banner-partner.png" alt="プログラムパートナー"></a>
+					</div>
+				</header>
+			</div>
+			<!-- // END header wrap -->
+		</div>
+		<!--// END header & nav -->
+		<!-- main -->
+		<main class="main">
+			<!-- hero -->
+			<div class="p-hero">
+				<div class="u-only--tab">
+					<img src="../images/top/hero-pc.png" alt="いわた温故知新博覧会 いわたおんぱく">
+				</div>
+				<div class="u-only--sp-tab container">
+					<img src="../images/top/hero-sp.png" alt="いわた温故知新博覧会 いわたおんぱく">
+				</div>
+
+				<!-- loop slide -->
+				<div class="l-roopslide-wrap">
+					<div class="swiper loopswiper">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<img src="https://picsum.photos/800/600?random=2416" alt="">
+							</div>
+							<div class="swiper-slide">
+								<img src="https://picsum.photos/800/600?random=2415" alt="">
+							</div>
+							<div class="swiper-slide">
+								<img src="https://picsum.photos/800/600?random=2414" alt="">
+							</div>
+							<div class="swiper-slide">
+								<img src="https://picsum.photos/800/600?random=2413" alt="">
+							</div>
+							<div class="swiper-slide">
+								<img src="https://picsum.photos/800/600?random=2412" alt="">
+							</div>
+							<div class="swiper-slide">
+								<img src="https://picsum.photos/800/600?random=2411" alt="">
+							</div>
+							<div class="swiper-slide">
+								<img src="https://picsum.photos/800/600?random=2410" alt="">
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- // END loop slide -->
+			</div>
+			<!-- // END hero -->
+
+			<!-- 告知 -->
+			<div class="container u-mb--5">
+				<div class="p-kokuchi-box">
+					<h4>いわたおんぱく2025は終了しました。</h4>
+					<p>ご来場下さった皆様、関係各所の皆様、本当にありがとうございました。</p>
+				</div>
+			</div>
+			<!-- // END 告知 -->
+
+			<!-- banner -->
+			<div class="container u-mb--5 p-banner">
+				<a href="#">
+					<img src="https://placehold.jp/800x300.png">
+				</a>
+			</div>
+			<!-- // END banner -->
+
+			<!-- ピックアップイベント -->
+			<section>
+				<div class="container u-mb--0">
+					<h2 class="u-h2--top">pick up<span>ピックアップイベント</span></h2>
+				</div>
+				<!-- スマホではdisplay: contentsとする -->
+				<div class="container u-dcontnets">
+					<div>
+						<ul class="u-slider--pu">
+							<li>
+								<figure>
+									<a href="#" title=""><img src="https://picsum.photos/300/200"></a>
+								</figure>
+								<div class="p-prglist__title">
+									<table>
+										<tr>
+											<th><h3 class="p-prglist__number-title"><span>program</span>04</h3></th>
+											<td><h4><a href="#" title="">おんぱくタイトルが入ります。</a></h4></td>
+										</tr>
+									</table>
+								</div>
+								<div class="p-prglist__date">
+									<h5>1.10月27日(日) / 11月3日(日) / 11月17日(日) / 12月8日(日) / 12月22日(日) / 各14:00～15:00</h5>
+								</div>
+							</li>
+							<li>
+								<figure>
+									<a href="#" title=""><img src="https://picsum.photos/300/200"></a>
+								</figure>
+								<div class="p-prglist__title">
+									<table>
+										<tr>
+											<th><h3 class="p-prglist__number-title"><span>program</span>02</h3></th>
+											<td><h4><a href="#" title="">おんぱくタイトルが入ります。地域の生活エリアでの交流</a></h4></td>
+										</tr>
+									</table>
+								</div>
+								<div class="p-prglist__date">
+									<h5>1.10月24日(木)ハロウィン / 11月16日(土)バルーンアート / 12月12日(木)クリスマス会 / いずれも10：00～12：00 / 12月12日(木)クリスマス会 / いずれも10：00～12：00</h5>
+								</div>
+							</li>
+							<li>
+
+								<figure>
+									<a href="#" title=""><img src="https://picsum.photos/300/200"></a>
+									</figure>
+									<div class="p-prglist__title">
+										<table>
+											<tr>
+												<th><h3 class="p-prglist__number-title"><span>program</span>02</h3></th>
+												<td><h4><a href="#" title="">おんぱくタイトルが入ります。地域の生活エリアでの交流地域の生活エリアでの交流</a></h4></td>
+											</tr>
+										</table>
+									</div>
+									<div class="p-prglist__date">
+										<h5>10月27日(日) / 11月3日(日) / 11月17日(日) / 12月8日(日) / 12月22日(日) / 各14:00～15:00</h5>
+									</div>
+							</li>
+							<li>
+								<figure>
+									<a href="#" title=""><img src="https://picsum.photos/300/200"></a>
+									</figure>
+									<div class="p-prglist__title">
+										<table>
+											<tr>
+												<th><h3 class="p-prglist__number-title"><span>program</span>02</h3></th>
+												<td><h4><a href="#" title="">おんぱくタイトルが入ります。地域の生活エリアでの交流</a></h4></td>
+											</tr>
+										</table>
+									</div>
+									<div class="p-prglist__date">
+										<h5>1.10月27日(日) / 11月3日(日) / 11月17日(日) / 12月8日(日) / 12月22日(日) / 各14:00～15:00</h5>
+									</div>
+							</li>
+							<li>
+								<figure>
+									<a href="#" title=""><img src="https://picsum.photos/300/200"></a>
+									</figure>
+									<div class="p-prglist__title">
+										<table>
+											<tr>
+												<th><h3 class="p-prglist__number-title"><span>program</span>02</h3></th>
+												<td><h4><a href="#" title="">おんぱくタイトルが入ります。地域の生活エリアでの交流</a></h4></td>
+											</tr>
+										</table>
+									</div>
+									<div class="p-prglist__date">
+										<h5>1.10月27日(日) / 11月3日(日) / 11月17日(日) / 12月8日(日) / 12月22日(日) / 各14:00～15:00</h5>
+									</div>
+							</li>
+						</ul>
+					</div>
+					<div class="c-btn-width">
+						<a href="#" title="プログラム一覧を見る"><img src="../images/common/btn-prg-list.svg" alt="プログラム一覧を見る"></a>
+					</div>
+				</div>
+				<!-- // END スマホではdisplay: contentsとする -->
+			</section>
+			<!-- // END ピックアップイベント -->
+
+			<!-- NEWS -->
+			<section>
+				<div class="container u-mb--0">
+					<h2 class="u-h2--top">news<span>お知らせ</span></h2>
+					<ul class="p-info-list">
+						<li>
+							<div class="p-info-list__thumb">
+								<img src="../images/common/no-photo.png" alt="">
+							</div>
+							<div class="p-info-list__date">
+								<p><span><a href="#">カテゴリ名</a></span>2025.08.04</p>
+							</div>
+							<div class="p-info-list__title">
+								<h5><a href="#" title="">おしらせタイトルが入ります。おしらせタイトルが入ります。おしらせタイトルが入ります。</a></h5>
+							</div>
+						</li>
+						<li>
+							<div class="p-info-list__thumb">
+								<img src="../images/common/no-photo.png" alt="">
+							</div>
+							<div class="p-info-list__date">
+								<p><span><a href="#">カテゴリ名</a></span>2025.08.04</p>
+							</div>
+							<div class="p-info-list__title">
+								<h5><a href="#" title="">おしらせタイトルが入ります。おしらせタイトルが入ります。おしらせタイトルが入ります。</a></h5>
+							</div>
+						</li>
+						<li>
+							<div class="p-info-list__thumb">
+								<img src="../images/common/no-photo.png" alt="">
+							</div>
+							<div class="p-info-list__date">
+								<p><span><a href="#">カテゴリ名</a></span>2025.08.04</p>
+							</div>
+							<div class="p-info-list__title">
+								<h5><a href="#" title="">おしらせタイトルが入ります。おしらせタイトルが入ります。おしらせタイトルが入ります。</a></h5>
+							</div>
+						</li>
+					</ul>
+					<div class="c-btn-width">
+						<a href="#" title="お知らせ一覧を見る"><img src="../images/common/btn-news-list.svg" alt="お知らせ覧を見る"></a>
+					</div>
+				</div>
+			</section>
+			<!-- // END NEWS -->
+
+			<!-- カテゴリボタン -->
+			<div class="c-box-bg--gray u-mb--6">
+				<section class="container">
+					<h2 class="u-h2--top">category<span>カテゴリー</span></h2>
+					<p>「非日常（感動・満足）型」の観光・余暇スタイルから、「地域の生活エリアでの交流と人とのふれあい（感心、共感）型」へ。<br>“日常生活のちょっと先“にある余暇の空間と時間がかけがえのないものになっていきます！</p>
+					<!-- categoryボタン -->
+					<ul class="c-category-grid">
+						<li class="itme1">
+							<a href="#" title="いわたおんぱくスペシャル">
+								<img src="../images/top/btn-special-pc.svg" alt="いわたおんぱくスペシャル" class="u-only--tab">
+								<img src="../images/top/btn-special-sp.svg" alt="いわたおんぱくスペシャル" class="u-only--sp-tab">
+							</a>
+						</li>
+						<li class="item2">
+							<a href="#" title="ちょっとアドベンチャー">
+								<img src="../images/top/btn-adv-pc.svg" alt="ちょっとアドベンチャー class="u-only--tab">
+								<img src="../images/top/btn-adv-sp.svg" alt="ちょっとアドベンチャー" class="u-only--sp-tab">
+							</a>
+						</li>
+						<li class="item3">
+							<a href="#" title="いわたの歴史を紐解く体験">
+								<img src="../images/top/btn-his-pc.svg" alt="いわたの歴史を紐解く体験" class="u-only--tab">
+								<img src="../images/top/btn-his-sp.svg" alt="いわたの歴史を紐解く体験" class="u-only--sp-tab">
+							</a>
+						</li>
+						<li class="item4">
+							<a href="#" title="ウェルビーイング&セルフケア体験">
+								<img src="../images/top/btn-well-pc.svg" alt="ウェルビーイング&セルフケア体験" class="u-only--tab">
+								<img src="../images/top/btn-well-sp.svg" alt="ウェルビーイング&セルフケア体験" class="u-only--sp-tab">
+							</a>
+						</li>
+						<li class="item5">
+							<a href="#" title="食と農の体験プログラム">
+								<img src="../images/top/btn-agriculture-pc.svg" alt="食と農の体験プログラム" class="u-only--tab">
+								<img src="../images/top/btn-agriculture-sp.svg" alt="食と農の体験プログラム" class="u-only--sp-tab">
+							</a>
+						</li>
+						<li class="item6">
+							<a href="#" title="スポーツ体験&体験型交流会">
+								<img src="../images/top/btn-sports-pc.svg" alt="スポーツ体験&体験型交流会" class="u-only--tab">
+								<img src="../images/top/btn-sports-sp.svg" alt="スポーツ体験&体験型交流会" class="u-only--sp-tab">
+							</a>
+
+						</li>
+						<li class="item7">
+							<a href="#" title="発見と創造の体験">
+								<img src="../images/top/btn-art-pc.svg" alt="発見と創造の体験" class="u-only--tab">
+								<img src="../images/top/btn-art-sp.svg" alt="発見と創造の体験" class="u-only--sp-tab">
+							</a>
+						</li>
+						<li class="item8">
+							<a href="#" title="暮らし・学びのセミナー">
+								<img src="../images/top/btn-seminar-pc.svg" alt="暮らし・学びのセミナー" class="u-only--tab">
+								<img src="../images/top/btn-seminar-sp.svg" alt="暮らし・学びのセミナー" class="u-only--sp-tab">
+							</a>
+						</li>
+					</ul>
+					<!-- // END categoryボタン -->
+				</section>
+			</div>
+			<!-- // END テゴリボタン -->
+
+			<!-- insta -->
+			<section class="container u-mb--6">
+				<h2 class="u-h2--top">instagram<span>インスタグラム</span></h2>
+
+				<div class="c-btn-width">
+					<a href="#" title="インスタグラムを見る"><img src="../images/common/btn-news-list.svg" alt="インスタグラムを見る"></a>
+				</div>
+			</section>
+			<!-- // END insta -->
+
+
+
+
+
+
+
+		</main>
+		<!-- // END main -->
+	</div>
+	<!-- // layout wraapper -->
+
+	<!-- footer -->
+	<div id="footer-area" class="footer">
+		<footer>
+			<div class="f-logo">
+				<a href="#" title="いわたおんぱく"><img src="../images/common/logo.svg" alt="いわたおんぱ"></a>
+
+				<ul>
+					<li>[ 主催 ] 磐田市観光協会、磐田市</li>
+					<li>[ 共催 ] 磐田商工会議所、磐田市商工会</li>
+					<li>[ 事務局 ]<br>磐田市観光協会 磐田市中泉1-1-5<br>TEL・FAX 0538-33-1222 / <a href="mailto:info@iwata-onpaku.jp">info@iwata-onpaku.jp</a></li>
+					<li>[ 運営委託 ] 株式会社 ケイアート</li>
+					<li><i class="fa-solid fa-lock fa-fw"></i> <a href="https://kanko-iwata.jp/privacy-policy/" target="_blank">プライバシーポリシー</a></li>
+				</ul>
+			</div>
+			<div class="f-nav1">
+				<ul>
+					<li><a href="#" title="おんぱくとは">おんぱくとは</a></li>
+					<li><a href="#" title="プログラム">プログラム</a></li>
+					<li><a href="#" title="パンフレットダウンロード">パンフレットダウンロード</a></li>
+					<li><a href="#" titile="プログラムに参加するには">プログラムに参加するには</a></li>
+				</ul>
+			</div>
+			<div class="f-nav2">
+				<ul>
+					<li><a href="#" title="おんぱくとは">実施条件</a></li>
+					<li><a href="#" title="パンフレットダウンロード">よくある質問</a></li>
+					<li><a href="#" titile="プログラムに参加するには">	お知らせ</a></li>
+				</ul>
+			</div>
+			<div class="f-login">
+				<ul>
+					<li><a href="#" title="会員登録"><img src="../images/common/btn-regist-footer.svg" alt="会員登録"></a></li>
+					<li><a href="#" title="ログイン"><img src="../images/common/btn-login-footer.svg" alt="ログイン"></a></li>
+				</ul>
+			</div>
+		</footer>
+
+		<div class="copy">©Iwata ONpaku</div>
+	</div>
+	<!--  // END footer -->
+
+	<div class="p-tategaki">
+		<p>いわた温故知新博覧会</p>
+	</div>
+
+	<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+	<script src="../dist/js/menu.js"></script>
+	<!-- slick -->
+	<script src="../dist/js/slick.min.js"></script>
+	<!-- swiper -->
+	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+	<script src="../dist/js/slide.js"></script>
+
+	<script src="../dist/js/init.js" defer></script>
+
+	<!-- accordion -->
+	<script src="../dist/js/accordion_init.js"></script>
+	<!-- modal -->
+	<script src="../dist/js/modaal.min.js"></script>
+	<script src="../dist/js/modal_ini.js"></script>
+</body>
+
+</html>

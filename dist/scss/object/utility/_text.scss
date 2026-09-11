@@ -1,0 +1,269 @@
+@use "../../foundation" as *;
+
+
+.u-notice {
+	font-size: clamp(1.3rem, calc(1.233rem + 0.19vw), 1.4rem);
+	line-height: 1.5;
+}
+
+
+
+h2 {
+
+	/* トップ使用 */
+	&.u-h2--top {
+		text-transform: uppercase;
+		margin-bottom: 24px;
+		position: relative;
+
+		span {
+			@include noto-sans;
+			font-size: clamp(1.3rem, calc(1.023rem + 0.77vw), 1.6rem);
+			position: absolute;
+			top: 50%;
+			transform: translateY(-50%);
+			margin-left: 16px;
+		}
+
+		span::before {
+			content: "●";
+			color: $blue;
+			margin-right: 8px;
+		}
+	}
+
+	/* primary */
+	&.u-h2--primary {
+		font-size: clamp(5rem, calc(1.308rem + 10.26vw), 9rem);
+		color: $blue;
+		line-height: 1.2;
+		margin-bottom: .75em;
+
+		span {
+			display: block;
+			@include noto-sans;
+			font-weight: 500;
+			font-size: clamp(1.6rem, calc(0.677rem + 2.56vw), 2.6rem);
+			color: $d_color;
+
+			&:before {
+				content: "●";
+				color: $blue;
+				margin-right: 8px;
+			}
+		}
+	}
+
+	/* プログラム詳細 タイトル */
+	&.u-prg-title {
+		@include noto-sans;
+		font-size: clamp(1.8rem, calc(0.508rem + 3.59vw), 3.2rem);
+		font-weight: 500;
+		border-bottom: solid 2px $d_color;
+		margin-bottom: 8px;
+	}
+}
+
+h3 {
+
+	/* ナンバータイトル */
+	&.u-number-title {
+		@include Copperplate;
+		font-size: clamp(5rem, calc(3.154rem + 5.13vw), 7rem);
+		color: $blue;
+		line-height: 1.1;
+
+		span {
+			font-size: clamp(1.3rem, calc(0.838rem + 1.28vw), 1.8rem);
+			display: block;
+		}
+	}
+
+	/* 白バック */
+	&.u-h3-white {
+		font-size: clamp(1.8rem, calc(1.246rem + 1.54vw), 2.4rem);
+		margin-bottom: 1em;
+		background: #fff;
+		display: block;
+		padding: 8px 16px;
+		@include kadomaru(8px);
+		position: relative;
+		padding-left: 1.75em;
+
+		&::before {
+			content: "●";
+			color: $blue;
+			font-size: 1.6rem;
+			position: absolute;
+			top: 50%;
+			transform: translateY(-50%);
+			left: 1em;
+		}
+	}
+
+	/* 白バック 番号付き */
+	&.u-h3-white--num {
+	  display: flex;
+	  align-items: baseline; /* 1行目のベースラインに揃える */
+	  font-size: clamp(1.8rem, calc(1.246rem + 1.54vw), 2.4rem);
+	  font-weight: 500;
+	  margin-bottom: 1em;
+	  background: #fff;
+	  padding: 16px;
+	  @include kadomaru(8px);
+
+	  &::before {
+		counter-increment: number; /* カウンターを増やす */
+		content: counter(number) "."; /* カウンター表示 */
+		color: $blue;
+		margin-right: 0.5em;
+		flex-shrink: 0;
+		line-height: 1.5;
+	  }
+	}
+
+	// 吹き出し
+	&.u-h3-fukidasi {
+		display: inline-block;
+		position: relative;
+		font-size: clamp(1.7rem, calc(1.3rem + 1.11vw), 2.3rem);
+		color: #fff;
+		text-align: center;
+		margin-bottom: 40px;
+		padding: .8em 2em;
+		background-color: $key_color;
+
+		&::before {
+			position: absolute;
+			left: 50%;
+			transform: translateX(-50%);
+			bottom: -15px;
+			width: 30px;
+			height: 15px;
+			background-color: $key_color;
+			clip-path: polygon(0 0, 100% 0, 50% 100%);
+			content: '';
+		}
+	}
+
+	// 下線
+	&.u-h3--borderbottom {
+		font-size: clamp(1.8rem, calc(1.533rem + 0.74vw), 2.2rem);
+		border-bottom: solid 2px #c9c2bb;
+		margin-bottom: 16px;
+	}
+
+	// 上下線
+	&.u-h3-w-border {
+		font-size: clamp(1.5rem, calc(1.033rem + 1.3vw), 2.2rem);
+		border-top: solid 2px #c9c2bb;
+		border-bottom: solid 2px #c9c2bb;
+		padding-left: 1em;
+		margin-bottom: 1em;
+		padding-top: 8px;
+		padding-bottom: 8px;
+		position: relative;
+
+		&::before {
+			content: "●";
+			color: $blue;
+			font-size: 1.6rem;
+			position: absolute;
+			top: 50%;
+			transform: translateY(-50%);
+			left: 0;
+		}
+	}
+
+	// センター キーカラー
+	&.h3-center-keycolor {
+		@include Copperplate;
+		font-size: clamp(3rem, calc(1.267rem + 4.81vw), 5.6rem);
+		text-align: center;
+		color: $key_color;
+		text-transform: uppercase;
+		word-break: keep-all;
+	}
+}
+
+h4 {
+
+	// センター ブルー
+	&.u-h4-center--blue {
+		font-size: clamp(2.4rem, calc(1.6rem + 2.22vw), 3.6rem);
+		text-align: center;
+		color: $blue;
+	}
+
+	// ●付き
+	&.h4-barret-disc {
+		font-size: clamp(1.8rem, calc(1.667rem + 0.37vw), 2rem);
+		font-weight: 500;
+		margin-left: 1.5em;
+
+		&::before {
+			content: "●";
+			color: $blue;
+			margin-right: 8px;
+			font-size: 1.5rem;
+			margin-left: -1.5em;
+		}
+	}
+}
+
+// ブルーバレットリスト
+ul.u-list--blueDisc {
+	list-style-type: none;
+	font-size: clamp(1.5rem, calc(1.3rem + 0.56vw), 1.8rem);
+
+	span {
+		display: block;
+		font-weight: 500;
+	}
+
+	li + li {
+		margin-top: .5em;
+	}
+
+	li {
+		margin-left: 1em;
+	}
+
+	li span::before {
+		content: "●";
+		color: $blue;
+		margin-left: -1em;
+	}
+}
+
+// リンクリスト
+ul.u-link-list {
+	font-size: clamp(1.4rem, calc(1.333rem + 0.19vw), 1.5rem);
+	list-style-type: none;
+
+	a {
+		color: $blue;
+		padding-left: 8px;
+	}
+
+	span {
+		display: block;
+		font-size: small;
+		padding-top: .5em;
+		padding-left: 8px;
+	}
+
+	li::before {
+		/* using style CSS custom property */
+		font: var(--fa-font-solid);
+		content: "\f138";
+		color: $d_color;
+		margin-left: -1em;
+		text-decoration: none;
+	}
+
+	li {
+		margin-left: 1em;
+		margin-bottom: .5em;
+	}
+}

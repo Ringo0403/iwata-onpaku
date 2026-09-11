@@ -1,0 +1,36 @@
+@use "../../foundation" as *;
+
+// PCのみ表示
+.u-only--pc {
+	display: none;
+
+	@include lg {
+		display: block;
+	}
+}
+
+// タブレット以降で表示
+.u-only--tab {
+	display: none !important;
+
+	@include md {
+		display: block !important;
+	}
+}
+
+// タブレットより小さいサイズで表示
+.u-only--sp-tab {
+
+	@include md {
+		display: none !important;
+	}
+}
+
+// スマホのみ表示
+.u-only--sp {
+
+	@include lg {
+		display: none !important;
+	}
+}
+

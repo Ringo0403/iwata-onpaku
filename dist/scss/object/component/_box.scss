@@ -1,0 +1,57 @@
+@use "../../foundation" as *;
+
+// 背景色付き
+.c-box-bg--gray {
+  background-color: #e3dfdc;
+
+  // デフォルト（スマホ）は100%
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 60px;
+
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  @include md {
+	// width: 98%;
+    max-width: 1320px;
+
+	padding-top: 56px;
+	padding-bottom: 80px;
+  }
+
+  @include lg {
+    @include kadomaru(16px 0 0 16px);
+  }
+}
+
+// 背景色付き 100%幅
+.c-box-bg--gray-w100 {
+  background-color: #e3dfdc;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 60px;
+
+  padding: 32px 24px 32px;
+
+  @include kadomaru(16px);
+
+  @include xl {
+    padding: 56px 40px 80px;
+  }
+}
+
+
+
+// ページ背景色と同色カラー
+.c-box-base-color {
+  background: #f0eeec;
+  padding: 24px 16px;
+  @include kadomaru(8px);
+
+  @include lg {
+    padding: 24px 40px;
+  }
+}

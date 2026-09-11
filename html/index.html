@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="format-detection" content="telephone=no, address=no">
+	<title>Document</title>
+
+	<!-- reset.css ress -->
+	<link rel="stylesheet" href="../dist/css/ress.min.css">
+	<link rel="stylesheet" href="../dist/css/styles.css">
+	<!-- fontawesome -->
+	<link rel="stylesheet" href="../dist/css/all.min.css">
+
+	<!-- slick -->
+	<link rel="stylesheet" href="../dist/css/slick.css">
+	<link rel="stylesheet" href="../dist/css/slick-theme.css">
+
+	<!-- MODAL -->
+	<link rel="stylesheet" href="../dist/css/modaal.min.css">
+
+	<!-- adobe fonts -->
+	<script>
+	  (function(d) {
+		var config = {
+		  kitId: 'vrf2sqn',
+		  scriptTimeout: 3000,
+		  async: true
+		},
+		h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+	  })(document);
+	</script>
+</head>
+
+<body>
+	<!-- layout wraapper -->
+	<div class="c-layout">
+		<!--header & nav -->
+		<div class="header">
+			<!-- header wrap -->
+			<div class="l-header-wrap">
+				<header class="container">
+					<h1><a href="#" title="いわたおんぱく"><img src="../images/common/logo.svg" alt="いわたおんぱく"></a></h1>
+					<!-- nav -->
+					<nav class="u-only--pc">
+						<ul class="l-btn-nav">
+							<li><a href="#" title="会員登録"><img src="../images/common/btn-regist.png" alt="会員登録"></a></li>
+							<li><a href="#" title="ログイン"><img src="../images/common/btn-login.png" alt="ログイン"></a></li>
+						</ul>
+						<ul class="l-main-nav">
+							<li><a href="#">プログラム一覧</a></li>
+							<li><a href="#">いわたおんぱくとは</a></li>
+							<li><a href="#">プログラムに参加するには</a></li>
+						</ul>
+						<ul class="l-sub-nav">
+							<li class="icon-conditions"><a href="#">プログラム実施条件</a></li>
+							<li class="icon-book"><a href="#">パンフレット</a></li>
+							<li class="icon-faq"><a href="#">よくある質問</a></li>
+							<li class="icon-report"><a href="#">過去の開催リポート</a></li>
+						</ul>
+						<form action="#" class="search-form-3">
+							<label>
+								<input type="text" placeholder="キーワードを入力">
+							</label>
+							<button type="submit" aria-label="検索"></button>
+						</form>
+					</nav>
+					
+					<!-- モバイルメニュー -->
+					<div class="openbtn">
+						<img src="../images/common/open-btn.svg" alt="menu">
+						<span></span>
+						<span></span>
+					</div>
+					<nav class="u-only--sp" id="g-nav">
+						<div id="g-nav-list"><!--ナビの数が増えた場合縦スクロールするためのdiv※不要なら削除-->
+						<h1><a href="#" title="いわたおんぱく"><img src="../images/common/logo.svg" alt="いわたおんぱく"></a></h1>
+							<ul class="l-btn-nav--sp">
+								<li><a href="#" title="会員登録"><img src="../images/common/btn-regist.png" alt="会員登録"></a></li>
+								<li><a href="#" title="ログイン"><img src="../images/common/btn-login.png" alt="ログイン"></a></li>
+							</ul>
+							<ul class="l-main-nav--sp">
+								<li class="has-child"><a href="#">プログラム一覧</a>
+									<ul>
+										<li><a href="#" title="">いわたおんぱくスペシャル</a></li>
+										<li><a href="#" title="">ちょっとアドベンチャー</a></li>
+										<li><a href="#" title="">いわたの歴史を紐解くプログラム</a></li>
+										<li><a href="#" title="">ミュージアム・セレクション２選＆創作ラボ</a></li>
+										<li><a href="#" title="">スポーツ＆体験型交流プログラム</a></li>
+										<li><a href="#" title="">ウェルビーイング＆ウェルネス体験</a></li>
+										<li><a href="#" title="">学び・活用・育てるセミナー</a></li>
+										<li><a href="#" title="">地元レストラン＆カフェの挑戦</a></li>
+									</ul>
+								</li> 
+								<li><a href="#">いわたおんぱくとは</a></li> 
+								<li><a href="#">プログラムに参加するには</a></li> 
+								<li><a href="#">Contact</a></li> 
+							</ul>
+							<ul class="l-sub-nav--sp">
+								<li class="icon-conditions"><a href="#">プログラム実施条件</a></li>
+								<li class="icon-book"><a href="#">パンフレット</a></li>
+								<li class="icon-faq"><a href="#">よくある質問</a></li>
+								<li class="icon-report"><a href="#">過去の開催リポート</a></li>
+							</ul>
+							<div class="l-banner--sp">
+								<a href="#" title="プログラムパートナー"><img src="../images/common/banner-partner.png" alt="プログラムパートナー"></a>
+							</div>
+						</div>					
+					</nav>
+					<!-- // END モバイルメニュー -->
+					<!-- // END nav -->
+				</header>
+				
+				<div class="l-banner">
+					<a href="#" title="プログラムパートナー"><img src="../images/common/banner-partner.png" alt="プログラムパートナー"></a>
+				</div>
+			</div>
+			<!-- // END header wrap -->
+		</div>
+		<!--// END header & nav -->
+		<!-- main -->
+		<main class="main">
+			<!-- パンくず -->
+			<div class="pankuzu container">
+				<ul>
+					<li><a href="#" title="トップ">TOP</a></li>
+					<li>新着一覧</li>
+				</ul>
+			</div>
+			<!-- // END パンくず -->
+			
+			<section class="container p-prg-single">
+				<h2 class="u-h2--primary">news<span>新着一覧</span></h2>
+				
+				<ul class="p-info-list">
+					<li>
+						<div class="p-info-list__thumb">
+							<img src="../images/common/no-photo.png" alt="">
+						</div>
+						<div class="p-info-list__date">
+							<p><span>カテゴリ名</span>2025.08.04</p>
+						</div>
+						<div class="p-info-list__title">
+							<h5><a href="#" title="">おしらせタイトルが入ります。おしらせタイトルが入ります。おしらせタイトルが入ります。</a></h5>
+						</div>
+					</li>
+					<li>
+						<div class="p-info-list__thumb">
+							<img src="../images/common/no-photo.png" alt="">
+						</div>
+						<div class="p-info-list__date">
+							<p><span>カテゴリ名</span>2025.08.04</p>
+						</div>
+						<div class="p-info-list__title">
+							<h5><a href="#" title="">おしらせタイトルが入ります。おしらせタイトルが入ります。おしらせタイトルが入ります。</a></h5>
+						</div>
+					</li>
+					<li>
+						<div class="p-info-list__thumb">
+							<img src="../images/common/no-photo.png" alt="">
+						</div>
+						<div class="p-info-list__date">
+							<p><span>カテゴリ名</span>2025.08.04</p>
+						</div>
+						<div class="p-info-list__title">
+							<h5><a href="#" title="">おしらせタイトルが入ります。おしらせタイトルが入ります。おしらせタイトルが入ります。</a></h5>
+						</div>
+					</li>
+					<li>
+						<div class="p-info-list__thumb">
+							<img src="../images/common/no-photo.png" alt="">
+						</div>
+						<div class="p-info-list__date">
+							<p><span>カテゴリ名</span>2025.08.04</p>
+						</div>
+						<div class="p-info-list__title">
+							<h5><a href="#" title="">おしらせタイトルが入ります。おしらせタイトルが入ります。おしらせタイトルが入ります。</a></h5>
+						</div>
+					</li>
+					<li>
+						<div class="p-info-list__thumb">
+							<img src="../images/common/no-photo.png" alt="">
+						</div>
+						<div class="p-info-list__date">
+							<p><span>カテゴリ名</span>2025.08.04</p>
+						</div>
+						<div class="p-info-list__title">
+							<h5><a href="#" title="">おしらせタイトルが入ります。おしらせタイトルが入ります。おしらせタイトルが入ります。</a></h5>
+						</div>
+					</li>
+					<li>
+						<div class="p-info-list__thumb">
+							<img src="../images/common/no-photo.png" alt="">
+						</div>
+						<div class="p-info-list__date">
+							<p><span>カテゴリ名</span>2025.08.04</p>
+						</div>
+						<div class="p-info-list__title">
+							<h5><a href="#" title="">おしらせタイトルが入ります。おしらせタイトルが入ります。おしらせタイトルが入ります。</a></h5>
+						</div>
+					</li>
+					<li>
+						<div class="p-info-list__thumb">
+							<img src="../images/common/no-photo.png" alt="">
+						</div>
+						<div class="p-info-list__date">
+							<p><span>カテゴリ名</span>2025.08.04</p>
+						</div>
+						<div class="p-info-list__title">
+							<h5><a href="#" title="">おしらせタイトルが入ります。おしらせタイトルが入ります。おしらせタイトルが入ります。</a></h5>
+						</div>
+					</li>
+					<li>
+						<div class="p-info-list__thumb">
+							<img src="../images/common/no-photo.png" alt="">
+						</div>
+						<div class="p-info-list__date">
+							<p><span>カテゴリ名</span>2025.08.04</p>
+						</div>
+						<div class="p-info-list__title">
+							<h5><a href="#" title="">おしらせタイトルが入ります。おしらせタイトルが入ります。おしらせタイトルが入ります。</a></h5>
+						</div>
+					</li>
+					<li>
+						<div class="p-info-list__thumb">
+							<img src="../images/common/no-photo.png" alt="">
+						</div>
+						<div class="p-info-list__date">
+							<p><span>カテゴリ名</span>2025.08.04</p>
+						</div>
+						<div class="p-info-list__title">
+							<h5><a href="#" title="">おしらせタイトルが入ります。おしらせタイトルが入ります。おしらせタイトルが入ります。</a></h5>
+						</div>
+					</li>
+					<li>
+						<div class="p-info-list__thumb">
+							<img src="../images/common/no-photo.png" alt="">
+						</div>
+						<div class="p-info-list__date">
+							<p><span>カテゴリ名</span>2025.08.04</p>
+						</div>
+						<div class="p-info-list__title">
+							<h5><a href="#" title="">おしらせタイトルが入ります。おしらせタイトルが入ります。おしらせタイトルが入ります。</a></h5>
+						</div>
+					</li>
+				</ul>
+				<div id="pagenation" style="text-align: center;">
+					<ul id="pagenation-list">
+						<li><a class="prev"><i class='fa-solid fa-circle-chevron-left fa-fw'></i></a></li>
+						<li><a class="num">1</a></li>
+						<li><span class="current">2</span></li>
+						<li><a class="num">3</a></li>
+						<li><a class="num">4</a></li>
+						<li><a class="num">5</a></li>
+						<li><a class="num">6</a></li>
+						<li><a class="num">7</a></li>
+						<li><span class="omit">...</span></li>
+						<li><a class="num">50</a></li>
+						<li><a class="next"><i class='fa-solid fa-circle-chevron-right fa-fw'></i></a></li>
+					</ul>
+				</div>
+				
+				<!-- 下記のコードをページャーを配置する場所に貼り付けます -->
+				<!-- <?php if(function_exists("pagenation_func")){pagenation_func(3,"pagenation","<i class='fa-solid fa-circle-chevron-left fa-fw fa-lg'></i>","<i class='fa-solid fa-circle-chevron-right'></i>");} ?> -->
+			</section>		
+			
+			
+		</main>
+		<!-- // END main -->		
+	</div>
+	<!-- // layout wraapper -->
+	
+	<!-- footer -->
+	<div id="footer-area" class="footer">
+		<footer>
+			<div class="f-logo"><a href="#" title="いわたおんぱく"><img src="../images/common/logo.svg" alt="いわたおんぱ"></a></div>
+			<div class="f-nav1">
+				<ul>
+					<li><a href="#" title="おんぱくとは">おんぱくとは</a></li>
+					<li><a href="#" title="プログラム">プログラム</a></li>
+					<li><a href="#" title="パンフレットダウンロード">パンフレットダウンロード</a></li>
+					<li><a href="#" titile="プログラムに参加するには">	プログラムに参加するには</a></li>
+				</ul>
+			</div>
+			<div class="f-nav2">
+				<ul>
+					<li><a href="#" title="おんぱくとは">実施条件</a></li>
+					<li><a href="#" title="パンフレットダウンロード">よくある質問</a></li>
+					<li><a href="#" titile="プログラムに参加するには">	お知らせ</a></li>
+				</ul>
+			</div>
+			<div class="f-login">
+				<ul>
+					<li><a href="#" title="会員登録"><img src="../images/common/btn-regist-footer.svg" alt="会員登録"></a></li>
+					<li><a href="#" title="ログイン"><img src="../images/common/btn-login-footer.svg" alt="ログイン"></a></li>
+				</ul>
+			</div>
+		</footer>
+		
+		<div class="copy">©Iwata ONpaku</div>
+	</div>
+	<!--  // END footer -->
+	
+	<div class="p-tategaki">
+		<p>いわた温故知新博覧会</p>
+	</div>
+	
+
+	<!-- modal -->
+	<div class="p-prg-search" id="prg">
+		<form method="GET" action="">
+		  <fieldset class="p-search">
+			  <ul class="p-search__cate">
+				  <li>カテゴリ</li>
+				  <li><label><input type="checkbox" name="genre[]" value="歴史 文化ツア">歴史 文化ツアー</label></li>
+				  <li><label><input type="checkbox" name="genre[]" value="グルメ・スイーツ">グルメ・スイーツ</label></li>
+				  <li><label><input type="checkbox" name="genre[]" value="学ぶ">学ぶ</label></li>
+				  <li><label><input type="checkbox" name="genre[]" value="oアート・クラフト">アート・クラフト</label></li>
+				  <li><label><input type="checkbox" name="genre[]" value="スポーツ">スポーツ</label></li>
+		  </fieldset>
+		
+		  <fieldset class="p-search">
+			  <ul class="p-search__keyword">
+				  <li>キーワード</li>
+				  <li><label><input type="checkbox" name="keyword[]" value="観光体験"><span>観光体験</span></label></li>
+				  <li><label><input type="checkbox" name="keyword[]" value="ワークショップ"><span>ワークショップ</span></label></li>
+				  <li><label><input type="checkbox" name="keyword[]" value="飲食店"><span>飲食店</span></label></li>
+				  <li><label><input type="checkbox" name="keyword[]" value="グリーンツーリズム"><span>グリーンツーリズム</span></label></li>
+			  </ul>
+		  </fieldset>
+		  <div class="p-search__btn">
+			<button type="reset" class="reset-button">リセット</button>
+			<button type="submit" class="search-button">検索</button>
+		  </div>
+		</form>
+	</div>
+	<!-- // END modal -->
+	
+	
+	<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+	<script src="../dist/js/menu.js"></script>
+	<!-- slick -->
+	<script src="../dist/js/slick.min.js"></script>
+	<script src="../dist/js/slide.js"></script>
+
+	<script src="../dist/js/init.js" defer></script>
+	
+	<!-- accordion -->
+	<script src="../dist/js/accordion_init.js"></script>
+	<!-- modal -->
+	<script src="../dist/js/modaal.min.js"></script>
+	<script src="../dist/js/modal_ini.js"></script>
+</body>
+
+</html>

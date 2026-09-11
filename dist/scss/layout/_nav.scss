@@ -1,0 +1,519 @@
+@use "../foundation" as *;
+
+// 会員登録・ログインボタン
+ul.l-btn-nav {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+
+	a {
+		display: block;
+	}
+
+	li {
+		margin-bottom: 8px;
+	}
+}
+
+// メインナビ
+ul.l-main-nav {
+	list-style-type: none;
+	padding: 0;
+	margin: 0 0 16px;
+	background: #fff;
+	@include kadomaru(6px);
+	font-size: 1.5rem;
+	font-weight: 400;
+	padding-left: 1em;
+	padding-right: 1em;
+
+	a {
+		display: block;
+		text-decoration: none;
+		padding: 1em 0 1em 22px;
+		position: relative;
+	}
+
+	li:has(a) + li:has(a) {
+		border-top: dotted 1px #dbd6d1;
+	}
+
+	li a::before {
+		content: "";
+		display: block;
+		width: 18px;
+		height: 18px;
+		background: url(../../images/common/nav-barret.svg);
+		background-size: cover;
+		position: absolute;
+		left: 0;
+		top: 50%;
+		transform: translateY(-50%);
+	}
+}
+
+// サブメニュー
+.l-sub-nav {
+	list-style-type: none;
+	padding: 0;
+	margin: 0 0 16px;
+	font-size: 1.5rem;
+	font-weight: 400;
+
+	a {
+		display: block;
+		text-decoration: none;
+	}
+
+	li + li {
+		margin-top: .75em;
+	}
+
+	// アイコン 実施条件
+	li.icon-conditions a {
+
+		&:before {
+			/* using style CSS custom property */
+			font: var(--fa-font-solid);
+			content: "\f05a";
+			color: #527d95;
+			margin-right: 8px;
+		}
+	}
+
+	// アイコン 未成年
+	li.icon-minor a {
+
+		&:before {
+			/* using style CSS custom property */
+			font: var(--fa-font-solid);
+			content: "\f1ae";
+			color: #527d95;
+			margin-right: 10px;
+			margin-left: 4px;
+		}
+	}
+
+	// アイコン パンフレット
+	li.icon-book a {
+
+		&:before {
+			/* using style CSS custom property */
+			font: var(--fa-font-solid);
+			content: "\f518";
+			color: #527d95;
+			margin-right: 8px;
+		}
+	}
+
+	// アイコン FAQ
+	li.icon-faq a {
+
+		&:before {
+			/* using style CSS custom property */
+			font: var(--fa-font-solid);
+			content: "\3f";
+			color: #527d95;
+			margin-right: 10px;
+			margin-left: 4px;
+		}
+	}
+
+	// アイコン 過去
+	li.icon-report a {
+
+		&:before {
+			/* using style CSS custom property */
+			font: var(--fa-font-solid);
+			content: "\f15c";
+			color: #527d95;
+			margin-right: 10px;
+			margin-left: 4px;
+		}
+	}
+}
+
+// バナー
+.l-banner {
+	display: none;
+
+	@include lg {
+		display: block;
+		margin-top: 40px;
+	}
+}
+
+// モバイルメニュー
+#g-nav {
+	position:fixed;
+	z-index: 999;
+	// ナビのスタート位置と形状
+	top:0;
+	left: -120%;
+	width:100%;
+	// ナビの高さ
+	height: 100vh;
+	background:#1e4c69;
+	// 動き
+	transition: all 0.6s;
+
+	padding-top: 8px;
+}
+
+// アクティブクラスがついたら位置を0に
+#g-nav.panelactive {
+	left: 0;
+}
+
+
+// ナビゲーションの縦スクロール
+#g-nav.panelactive #g-nav-list {
+	// ナビの数が増えた場合縦スクロール
+	position: fixed;
+	z-index: 999;
+	width:100%;
+	// 表示する高さ
+	height: 100vh;
+	overflow: auto;
+	-webkit-overflow-scrolling: touch;
+}
+
+// ボタンバナー
+#g-nav ul.l-btn-nav--sp {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 8px;
+	width: 92%;
+	max-width: 576px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 16px;
+
+	li a {
+		padding: 0;
+	}
+}
+
+// リストのレイアウト設定
+
+#g-nav li {
+	list-style: none;
+	text-align: center;
+	font-size: 1.5rem;
+
+	@include md {
+		font-size: 1.6rem;
+	}
+}
+
+#g-nav li a {
+	color: #fff;
+	text-decoration: none;
+	padding:10px;
+	display: block;
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+	font-weight: 400;
+}
+
+
+// ドロップメニュー
+#g-nav ul.l-main-nav--sp {
+	display: block;
+	width: 92%;
+	max-width: 576px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 16px;
+
+	li {
+		position: relative;
+		text-align: left;
+		padding-left: 0;
+	}
+
+	li {
+		border-top: solid 1px #527d95;
+	}
+
+	li:last-child {
+		border-bottom: solid 1px #527d95;
+	}
+
+	> li > a {
+		position: relative;
+		padding-left: 24px;
+	}
+
+	> li > a::before {
+		position: absolute;
+		left: 0;
+		content: url(../../images/common/nav-barret-sp.svg);
+		width: 15px;
+		height: auto;
+	}
+
+
+	li.has-child ul {
+		position: relative;
+		left:0;
+		top:0;
+		margin-left: 1em;
+		width:100%;
+		visibility:visible;/*JSで制御するため一旦表示*/
+		opacity:1;/*JSで制御するため一旦表示*/
+		display: none;/*JSのslidetoggleで表示させるため非表示に*/
+		transition:none;/*JSで制御するためCSSのアニメーションを切る*/
+
+		li a {
+			text-align: left;
+			font-size: 1.4rem;
+			font-weight: 300;
+			letter-spacing: normal;
+
+			@include md {
+				font-size: 1.5rem;
+			}
+		}
+
+		li a:before {
+			/* using style CSS custom property */
+			font: var(--fa-font-solid);
+			content: "\f068";
+			margin-right: 8px;
+			color: #00a0c8;
+		}
+
+		li {
+			border-top: none;
+		}
+
+		li:last-child {
+			border-bottom: none;
+		}
+	}
+
+	/*2階層目を持つliの矢印の設定*/
+	li.has-child::after{
+		content: '';
+		position: absolute;
+		right: 0;
+		top: 18px;
+		width: 6px;
+		height: 6px;
+		border-top: 2px solid #fff;
+		border-right:2px solid #fff;
+		transform: rotate(135deg);
+	}
+
+	/*hoverしたら表示*/
+	li.has-child:hover > ul,
+	li.has-child:active-menu > ul {
+	  visibility: visible;
+	  opacity: 1;
+	}
+
+	// 矢印の位置と向き
+
+	li.has-child::after {
+		right: 20px;
+		@include transition;
+	}
+
+	li.has-child::after{
+		transform: rotate(135deg);
+		right: 20px;
+		@include transition;
+	}
+
+	li.has-child.active-menu::after {
+		transform: rotate(-45deg);
+		@include transition;
+	}
+}
+
+// サブメニュー
+#g-nav ul.l-sub-nav--sp {
+	width: 92%;
+	max-width: 576px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 16px;
+
+	a {
+		text-align: left;
+		padding-left: 0;
+	}
+
+	// アイコン 実施条件
+	li.icon-conditions a {
+
+		&:before {
+			/* using style CSS custom property */
+			font: var(--fa-font-solid);
+			content: "\f05a";
+			color: #527d95;
+			margin-right: 8px;
+		}
+	}
+
+	// アイコン 未成年
+	li.icon-minor a {
+
+		&:before {
+			/* using style CSS custom property */
+			font: var(--fa-font-solid);
+			content: "\f1ae";
+			color: #527d95;
+			margin-right: 10px;
+			margin-left: 4px;
+		}
+	}
+
+
+	// アイコン パンフレット
+	li.icon-book a {
+
+		&:before {
+			/* using style CSS custom property */
+			font: var(--fa-font-solid);
+			content: "\f518";
+			color: #527d95;
+			margin-right: 8px;
+		}
+	}
+
+	// アイコン FAQ
+	li.icon-faq a {
+
+		&:before {
+			/* using style CSS custom property */
+			font: var(--fa-font-solid);
+			content: "\3f";
+			color: #527d95;
+			margin-right: 10px;
+			margin-left: 4px;
+		}
+	}
+
+	// アイコン 過去
+	li.icon-report a {
+
+		&:before {
+			/* using style CSS custom property */
+			font: var(--fa-font-solid);
+			content: "\f15c";
+			color: #527d95;
+			margin-right: 10px;
+			margin-left: 4px;
+		}
+	}
+}
+
+// リンクバナー
+.l-banner--sp {
+	width: 94%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 8px;
+
+	img {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+
+// ========= ボタンのためのCSS ===============
+
+.openbtn {
+	position:fixed;
+	// ボタンを最前面に
+	z-index: 9999;
+	top: 0;
+	right: 0;
+	cursor: pointer;
+	width: 70px;
+	height: 70px;
+	background: #00a0c8;
+
+	display: grid;
+	justify-content: center;
+	align-items: center;
+
+	img {
+		display: block;
+		width: 40px;
+		max-width: 96% !important;
+		height: auto;
+	}
+
+	span {
+		display: none;
+	}
+
+	@include lg {
+		display: none;
+	}
+}
+
+.openbtn.active {
+
+	img {
+		display: none;
+	}
+
+	span{
+		display: inline-block;
+		transition: all .4s;/*アニメーションの設定*/
+		position: absolute;
+		left: 14px;
+		height: 2px;
+		border-radius: 5px;
+		background: #fff;
+		width: 50%;
+	  }
+
+	span:nth-of-type(1) {
+		top: 28px;
+		left: 18px;
+		transform: translateY(6px) rotate(-45deg);
+		width: 50%;
+	}
+
+	span:nth-of-type(2) {
+		top: 40px;
+		left: 18px;
+		transform: translateY(-6px) rotate(45deg);
+		width: 50%;
+	}
+}
+
+//パンくず
+.pankuzu {
+	padding-top: 24px;
+	margin-bottom: 40px;
+
+	ul {
+		list-style-type: none;
+		font-size: clamp(1.3rem, calc(1.115rem + 0.51vw), 1.5rem);
+		display: flex;
+		flex-wrap: wrap;
+		gap: 8px 8px;
+
+		li {
+			color: $blue;;
+		}
+
+		li:has(a)::after {
+			content: ">";
+			margin-left: 8px;
+		}
+
+		a {
+			color: $d_color;
+			text-decoration: none;
+		}
+	}
+}

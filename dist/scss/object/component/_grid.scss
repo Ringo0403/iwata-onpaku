@@ -1,0 +1,133 @@
+@use "../../foundation" as *;
+
+// ページレイアウト基本
+.c-layout {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-areas:
+	"header"
+	"main";
+	// "footer";
+	position: relative;
+
+
+	max-width: 1800px;
+	margin-left: auto;
+	margin-right: auto;
+
+	// silick.jsのバグ対策
+	* {
+		min-height: 0;
+		min-width : 0;
+	}
+
+	.header {
+		grid-area: header;
+
+	}
+
+	.main {
+		grid-area: main;
+	}
+
+	@include lg {
+		// ナビエリア300px固定
+		grid-template-columns: 300px 1fr;
+		grid-template-areas:
+		"header main";
+		// "footer footer";
+
+	}
+}
+
+
+// 12列レイアウト
+// 列数だけ指定する設計
+.c-grid {
+	display: grid;
+	gap: 20px;
+
+	@include lg {
+		grid-template-columns: repeat(12, 1fr);
+	}
+}
+
+// span
+@for $i from 1 through 12 {
+	.u-span-#{$i} {
+		@include lg {
+			grid-column: span #{$i};
+		}
+	}
+}
+
+// 使い方
+// <div class="c-grid">
+// 	<div class="u-span-4">左</div>
+// 	<div class="u-span-8">右</div>
+// </div>
+
+
+// grifd3分割 プログラムに参加するには
+.c-grid--3 {
+	display: grid;
+	grid-template-columns: 1fr;
+
+	@include lg {
+		grid-template-columns: repeat(3, 1fr);
+
+		div + div {
+			border-left: dotted 2px #c9c2bb
+		}
+
+		.item1 {
+			padding-right: 1em;
+		}
+
+		.item2 {
+			padding-left: 1em;
+			padding-right: 1em;
+		}
+
+		.item3 {
+			padding-left: 1em;
+		}
+	}
+
+
+	div {
+		padding-top: .5em;
+	}
+
+
+
+}
+
+
+/* gap設定 */
+.c-gap24-40 {
+	gap: 24px !important;
+
+	@include md {
+		gap: 40px !important;
+	}
+}
+
+.c-gap32-48 {
+	gap: 32px !important;
+
+	@include md {
+		gap: 48px !important;
+	}
+}
+
+.c-gap40-56 {
+	gap: 40px !important;
+
+	@include md {
+		gap: 56px !important;
+	}
+}
+
+
+

@@ -1,0 +1,43 @@
+@use "../../foundation" as *;
+
+// スマホではdisplay: contentsとする
+.u-dcontnets {
+	display: contents;
+
+	@include md {
+		display: block;
+	}
+}
+
+// スマホで改行無効
+.u-br-none {
+
+	br {
+		display: none;
+	}
+
+	@include md {
+
+		br {
+			display: block;
+		}
+	}
+}
+
+// width: 80%
+.u-w-80 {
+	width: 50%;
+
+	@include lg {
+		width: 100%;
+		max-width: 100%;
+	}
+}
+
+// 上下線を付ける
+.u-add--w-border {
+	border-top: solid 2px #c9c2bb;
+	border-bottom: solid 2px #c9c2bb;
+	padding-top: 16px;
+	padding-bottom: 16px;
+}

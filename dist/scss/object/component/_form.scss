@@ -1,0 +1,288 @@
+@use "../../foundation" as *;
+
+/****************************************
+	MW WP FORM（状態別）
+*****************************************/
+
+// 確認画面（preview）
+.mw_wp_form_preview {
+
+	div.align__center > span {
+		display: none;
+	}
+
+	.doui {
+		display: none !important;
+	}
+
+	p.not_confirm,
+	p.c-form-kakunin {
+		display: none;
+	}
+
+	.kakunin {
+		display: none;
+	}
+}
+
+// 確認画面（confirm）
+.mw_wp_form_confirm {
+	.doui {
+		display: none !important;
+	}
+}
+
+
+/****************************************
+	個別調整
+*****************************************/
+
+.mwform-checkbox-field-text {
+	font-size: 1.6rem;
+	margin-right: .25em;
+}
+
+#your-zip {
+	width: 10em !important;
+}
+
+input.size4em[type="text"],
+input[type="text"].number {
+	width: 4em;
+}
+
+input[type="text"].zip {
+	width: 8em;
+}
+
+.mwform-tel-field input[type="text"] {
+	margin-bottom: 0;
+}
+
+.kakunin {
+	margin-top: 16px;
+
+	input[type="text"] {
+		margin-top: 16px;
+	}
+}
+
+
+/****************************************
+	プレースホルダー
+*****************************************/
+
+::placeholder {
+	font-size: small;
+}
+
+textarea::placeholder {
+	font-size: 13px;
+}
+
+
+/****************************************
+	Form 基本
+*****************************************/
+
+form {
+	margin: 0;
+	padding: 0;
+}
+
+label {
+	@include md {
+		display: inline;
+	}
+}
+
+
+/****************************************
+	入力フィールド
+*****************************************/
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+textarea {
+	margin: 0 0 20px;
+	padding: .75em;
+	outline: none;
+	border: 1px solid #ccc;
+	background: #F7F9FC;
+	color: $d_color;
+	font-size: 1.6rem;
+	box-sizing: border-box;
+	@include kadomaru(6px);
+
+	&:last-of-type {
+		margin-bottom: 0;
+	}
+}
+
+// input幅制御
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+	@include md {
+		max-width: 50%;
+	}
+}
+
+// textarea
+textarea {
+	width: 100%;
+	overflow: auto;
+
+	@include md {
+		width: 80%;
+		max-width: 100%;
+	}
+}
+
+// フォーカス
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+	border: 1px solid #ced1ff;
+	background: #fff;
+	box-shadow: 0 0 3px #e2e4ff;
+	color: $d_color;
+	@include kadomaru(6px);
+}
+
+// form-box内だけ背景変更
+.form-box {
+	input[type="text"] {
+		background: #fff;
+	}
+}
+
+
+/****************************************
+	チェックボックス・ラジオ
+*****************************************/
+
+// checkbox
+input[type=checkbox] {
+	accent-color: $key_color;
+}
+
+// radio
+input[type=radio] {
+	position: relative;
+	appearance: none;
+	width: 16px;
+	height: 16px;
+	border: 1px solid #000;
+	border-radius: 50%;
+	vertical-align: -2px;
+}
+
+input[type="radio"]:checked:before {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 9px;
+	height: 9px;
+	border-radius: 50%;
+	background: $key_color;
+	content: '';
+}
+
+
+/****************************************
+	ボタン
+*****************************************/
+
+input[type="submit"].f-btn,
+input[type="reset"].f-btn,
+input[type="button"].f-btn {
+	display: inline-block;
+	font-size: 1.8rem;
+	padding: 18px 4em;
+	background-color: #54CCFF;
+	color: #fff;
+	border: solid 2px #54CCFF;
+	@include kadomaru(8px);
+	@include transition;
+}
+
+input[type="submit"].f-btn:hover,
+input[type="reset"].f-btn:hover,
+input[type="button"].f-btn:hover {
+	background: #54CCFF;
+	color: #fff;
+	border: solid 2px #54CCFF;
+	@include transition;
+}
+
+input[type="submit"]:disabled.f-btn,
+input[type="reset"]:disabled.f-btn,
+input[type="button"]:disabled.f-btn {
+	color: #fff;
+	background-color: #d7d7d7;
+	border: solid 2px #d7d7d7;
+	@include transition;
+}
+
+
+/****************************************
+	検索フォーム
+*****************************************/
+
+.search-form-3 {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	overflow: hidden;
+	border: 1px solid #dbd6d1;
+	border-radius: 6px;
+	background: #fff;
+}
+
+.search-form-3 label {
+	width: 100%;
+}
+
+.search-form-3 input {
+	width: 100% !important;
+	max-width: 100% !important;
+	height: 45px;
+	padding: 5px 15px;
+	border: none;
+	box-sizing: border-box;
+	font-size: 1.6em;
+	outline: none;
+	background: #fff;
+}
+
+.search-form-3 input[type="text"]:focus {
+	border: none;
+	box-shadow: none;
+}
+
+.search-form-3 input::placeholder {
+	color: #999999;
+}
+
+.search-form-3 button {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 50px;
+	height: 45px;
+	border: none;
+	background-color: transparent;
+	cursor: pointer;
+}
+
+.search-form-3 button::after {
+	width: 24px;
+	height: 24px;
+	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M18.031 16.6168L22.3137 20.8995L20.8995 22.3137L16.6168 18.031C15.0769 19.263 13.124 20 11 20C6.032 20 2 15.968 2 11C2 6.032 6.032 2 11 2C15.968 2 20 6.032 20 11C20 13.124 19.263 15.0769 18.031 16.6168ZM16.0247 15.8748C17.2475 14.6146 18 12.8956 18 11C18 7.1325 14.8675 4 11 4C7.1325 4 4 7.1325 4 11C4 14.8675 7.1325 18 11 18C12.8956 18 14.6146 17.2475 15.8748 16.0247L16.0247 15.8748Z' fill='%23dbd6d1'%3E%3C/path%3E%3C/svg%3E");
+	background-repeat: no-repeat;
+	content: '';
+}

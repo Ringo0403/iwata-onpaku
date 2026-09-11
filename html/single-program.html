@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="format-detection" content="telephone=no, address=no">
+	<title>Document</title>
+
+	<!-- reset.css ress -->
+	<link rel="stylesheet" href="../dist/css/ress.min.css">
+	<link rel="stylesheet" href="../dist/css/styles.css">
+	<!-- fontawesome -->
+	<link rel="stylesheet" href="../dist/css/all.min.css">
+
+	<!-- slick -->
+	<link rel="stylesheet" href="../dist/css/slick.css">
+	<link rel="stylesheet" href="../dist/css/slick-theme.css">
+
+	<!-- MODAL -->
+	<link rel="stylesheet" href="../dist/css/modaal.min.css">
+
+	<!-- adobe fonts -->
+	<script>
+	  (function(d) {
+		var config = {
+		  kitId: 'vrf2sqn',
+		  scriptTimeout: 3000,
+		  async: true
+		},
+		h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+	  })(document);
+	</script>
+</head>
+
+<body>
+	<!-- layout wraapper -->
+	<div class="c-layout">
+		<!--header & nav -->
+		<div class="header">
+			<!-- header wrap -->
+			<div class="l-header-wrap">
+				<header class="container">
+					<h1><a href="#" title="いわたおんぱく"><img src="../images/common/logo.svg" alt="いわたおんぱく"></a></h1>
+					<!-- nav -->
+					<nav class="u-only--pc">
+						<ul class="l-btn-nav">
+							<li><a href="#" title="会員登録"><img src="../images/common/btn-regist.png" alt="会員登録"></a></li>
+							<li><a href="#" title="ログイン"><img src="../images/common/btn-login.png" alt="ログイン"></a></li>
+						</ul>
+						<ul class="l-main-nav">
+							<li><a href="#">プログラム一覧</a></li>
+							<li><a href="#">いわたおんぱくとは</a></li>
+							<li><a href="#">プログラムに参加するには</a></li>
+						</ul>
+						<ul class="l-sub-nav">
+							<li class="icon-conditions"><a href="#">プログラム実施条件</a></li>
+							<li class="icon-book"><a href="#">パンフレット</a></li>
+							<li class="icon-faq"><a href="#">よくある質問</a></li>
+							<li class="icon-report"><a href="#">過去の開催リポート</a></li>
+						</ul>
+						<form action="#" class="search-form-3">
+							<label>
+								<input type="text" placeholder="キーワードを入力">
+							</label>
+							<button type="submit" aria-label="検索"></button>
+						</form>
+					</nav>
+
+					<!-- モバイルメニュー -->
+					<div class="openbtn">
+						<img src="../images/common/open-btn.svg" alt="menu">
+						<span></span>
+						<span></span>
+					</div>
+					<nav class="u-only--sp" id="g-nav">
+						<div id="g-nav-list"><!--ナビの数が増えた場合縦スクロールするためのdiv※不要なら削除-->
+						<h1><a href="#" title="いわたおんぱく"><img src="../images/common/logo.svg" alt="いわたおんぱく"></a></h1>
+							<ul class="l-btn-nav--sp">
+								<li><a href="#" title="会員登録"><img src="../images/common/btn-regist.png" alt="会員登録"></a></li>
+								<li><a href="#" title="ログイン"><img src="../images/common/btn-login.png" alt="ログイン"></a></li>
+							</ul>
+							<ul class="l-main-nav--sp">
+								<li class="has-child"><a href="#">プログラム一覧</a>
+									<ul>
+										<li><a href="#" title="">いわたおんぱくスペシャル</a></li>
+										<li><a href="#" title="">ちょっとアドベンチャー</a></li>
+										<li><a href="#" title="">いわたの歴史を紐解くプログラム</a></li>
+										<li><a href="#" title="">ミュージアム・セレクション２選＆創作ラボ</a></li>
+										<li><a href="#" title="">スポーツ＆体験型交流プログラム</a></li>
+										<li><a href="#" title="">ウェルビーイング＆ウェルネス体験</a></li>
+										<li><a href="#" title="">学び・活用・育てるセミナー</a></li>
+										<li><a href="#" title="">地元レストラン＆カフェの挑戦</a></li>
+									</ul>
+								</li>
+								<li><a href="#">いわたおんぱくとは</a></li>
+								<li><a href="#">プログラムに参加するには</a></li>
+								<li><a href="#">Contact</a></li>
+							</ul>
+							<ul class="l-sub-nav--sp">
+								<li class="icon-conditions"><a href="#">プログラム実施条件</a></li>
+								<li class="icon-book"><a href="#">パンフレット</a></li>
+								<li class="icon-faq"><a href="#">よくある質問</a></li>
+								<li class="icon-report"><a href="#">過去の開催リポート</a></li>
+							</ul>
+							<div class="l-banner--sp">
+								<a href="#" title="プログラムパートナー"><img src="../images/common/banner-partner.png" alt="プログラムパートナー"></a>
+							</div>
+						</div>
+					</nav>
+					<!-- // END モバイルメニュー -->
+					<!-- // END nav -->
+				</header>
+
+				<div class="l-banner">
+					<a href="#" title="プログラムパートナー"><img src="../images/common/banner-partner.png" alt="プログラムパートナー"></a>
+				</div>
+			</div>
+			<!-- // END header wrap -->
+		</div>
+		<!--// END header & nav -->
+		<!-- main -->
+		<main class="main">
+			<!-- パンくず -->
+			<div class="pankuzu container">
+				<ul>
+					<li><a href="#" title="トップ">TOP</a></li>
+					<li><a href="#" title="プログラム一覧">プログラム一覧</a></li>
+					<li>プログラムの名称が入ります</li>
+				</ul>
+			</div>
+			<!-- // END パンくず -->
+
+			<section class="container p-prg-single">
+				<h3 class="u-number-title"><span>program</span>01</h3>
+				<div class="p-categoryname">
+					<a href="#">みんな集まれ！ スポーツ＆体験型交流プログラム</a>
+				</div>
+
+				<article class="u-mb--6">
+					<h2 class="u-prg-title">イベントタイトルが入ります。イベントタイトルが入ります。</h2>
+					<!-- 日付 -->
+					<div class="p-datebox">
+						<div class="p-datebox__date">
+							<p>10月27日(日)／11月3日(日)／11月17日(日)／12月8日(日)／12月22日(日)／各14:00～15:00</p>
+						</div>
+						<div class="p-datebox__link">
+							<p><a href="#">希望の空席確認・予約をする</a></p>
+						</div>
+					</div>
+					<!-- // END 日付 -->
+
+					<div class="p-prg-img">
+						<img src=https://picsum.photos/800/600?random=899">
+					</div>
+
+					<div class="c-grid c-gap40-56">
+						<div class="u-span-7 p-prg-sub-title">
+							<h3>見出し見出し見出し見出し見出し見出し見出し見出し見出し見出し見出し見出し見出し見出し見出し見出し見出し見出し見出し見出し</h3>
+							<p>この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れ</p>
+
+							<ul class="p-file-dl">
+								<li><a href="#.pdf" target="_blank">PDFのファイル名が表示されます</a></li>
+								<li><a href="#.pdf" target="_blank">PDFのファイル名が表示されます</a></li>
+							</ul>
+						</div>
+						<div class="u-span-5 p-prg-sub-img">
+							<img src=https://picsum.photos/800/600?random=2">
+						</div>
+					</div>
+				</article>
+
+				<article class="u-mb--6">
+					<h3 class="u-h3-white">実施条件</h3>
+					<p>この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れ</p>
+				</article>
+
+				<article class="u-mb--6">
+					<h3 class="u-h3-white">開催場所・集合場所</h3>
+					<div class="c-grid c-gap40-56">
+						<div class="u-span-6">
+							<div class="gmap">
+								<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3279.5453455940187!2d137.85936941190738!3d34.71664578224312!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x601ae5ca9a6a78d3%3A0xe36b1e4dc85ab4ff!2z77yI5qCq77yJ44Kx44Kk44O744Ki44O844OI!5e0!3m2!1sja!2sjp!4v1754440550569!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+							</div>
+						</div>
+						<div class="u-span-6">
+							<p>この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れ</p>
+						</div>
+					</div>
+				</article>
+
+			<article class="u-mb--6">
+				<h3 class="u-h3-white">お申し込み・問い合わせ先</h3>
+				<table class="c-table--dotted">
+					<tr>
+						<th>申込先</th>
+						<td>申し込み先が表示されます。</td>
+					</tr>
+					<tr>
+						<th>お問い合わせ先</th>
+						<td>お問い合わせ先が表示されます。</td>
+					</tr>
+					<tr>
+						<th>主催・担当</th>
+						<td>主催・担当先が表示されます。</td>
+					</tr>
+				</table>
+				<div class="p-select-area">
+					<div>
+						<label for="date-select">開催日時</label>
+						<div class="selectbox">
+							<select name="kaisaibi" id="date-select">
+								<option value="">選択して下さい</option>
+								<option value="https//xxxxxx.jp">10月27日(日)</option>
+								<option value="https//xxxxxx.jp">11月3日(日)</option>
+								<option value="https//xxxxxx.jp">11月17日(日)</option>
+								<option value="https//xxxxxx.jp">12月8日(日)</option>
+								<option value="https//xxxxxx.jp">12月22日(日)</option>
+							</select>
+						</div>
+					</div>
+					<div>
+						<div class="c-btn-width">
+							<a href="#" title="選択日時で参加予約をする"><img src="../images/common/btn-yoyaku.svg" alt="選択日時で参加予約をする"></a>
+						</div>
+					</div>
+				</div>
+			</article>
+			</section>
+
+
+		</main>
+		<!-- // END main -->
+	</div>
+	<!-- // layout wraapper -->
+
+	<!-- footer -->
+	<div id="footer-area" class="footer">
+		<footer>
+			<div class="f-logo"><a href="#" title="いわたおんぱく"><img src="../images/common/logo.svg" alt="いわたおんぱ"></a></div>
+			<div class="f-nav1">
+				<ul>
+					<li><a href="#" title="おんぱくとは">おんぱくとは</a></li>
+					<li><a href="#" title="プログラム">プログラム</a></li>
+					<li><a href="#" title="パンフレットダウンロード">パンフレットダウンロード</a></li>
+					<li><a href="#" titile="プログラムに参加するには">	プログラムに参加するには</a></li>
+				</ul>
+			</div>
+			<div class="f-nav2">
+				<ul>
+					<li><a href="#" title="おんぱくとは">実施条件</a></li>
+					<li><a href="#" title="パンフレットダウンロード">よくある質問</a></li>
+					<li><a href="#" titile="プログラムに参加するには">	お知らせ</a></li>
+				</ul>
+			</div>
+			<div class="f-login">
+				<ul>
+					<li><a href="#" title="会員登録"><img src="../images/common/btn-regist-footer.svg" alt="会員登録"></a></li>
+					<li><a href="#" title="ログイン"><img src="../images/common/btn-login-footer.svg" alt="ログイン"></a></li>
+				</ul>
+			</div>
+		</footer>
+
+		<div class="copy">©Iwata ONpaku</div>
+	</div>
+	<!--  // END footer -->
+
+	<div class="p-tategaki">
+		<p>いわた温故知新博覧会</p>
+	</div>
+	<!-- 検索ボタン -->
+	<div class="c-icon-search">
+		<a href="#prg" class="modal-open" title="プログラムを検索">
+		<img src="../images/common/icon-serach.png" alt="プログラムを検索">
+		</a>
+		<a href="#" title="空席確認・予約する">
+		<img src="../images/common/icon-yoyaku.svg" alt="空席確認・予約する" class="u-mt--1">
+		</a>
+	</div>
+	<!-- 検索ボタン -->
+
+	<!-- modal -->
+	<div class="p-prg-search" id="prg">
+		<form method="GET" action="">
+		  <fieldset class="p-search">
+			  <ul class="p-search__cate">
+				  <li>カテゴリ</li>
+				  <li><label><input type="checkbox" name="genre[]" value="歴史 文化ツア">歴史 文化ツアー</label></li>
+				  <li><label><input type="checkbox" name="genre[]" value="グルメ・スイーツ">グルメ・スイーツ</label></li>
+				  <li><label><input type="checkbox" name="genre[]" value="学ぶ">学ぶ</label></li>
+				  <li><label><input type="checkbox" name="genre[]" value="oアート・クラフト">アート・クラフト</label></li>
+				  <li><label><input type="checkbox" name="genre[]" value="スポーツ">スポーツ</label></li>
+		  </fieldset>
+
+		  <fieldset class="p-search">
+			  <ul class="p-search__keyword">
+				  <li>キーワード</li>
+				  <li><label><input type="checkbox" name="keyword[]" value="観光体験"><span>観光体験</span></label></li>
+				  <li><label><input type="checkbox" name="keyword[]" value="ワークショップ"><span>ワークショップ</span></label></li>
+				  <li><label><input type="checkbox" name="keyword[]" value="飲食店"><span>飲食店</span></label></li>
+				  <li><label><input type="checkbox" name="keyword[]" value="グリーンツーリズム"><span>グリーンツーリズム</span></label></li>
+			  </ul>
+		  </fieldset>
+		  <div class="p-search__btn">
+			<button type="reset" class="reset-button">リセット</button>
+			<button type="submit" class="search-button">検索</button>
+		  </div>
+		</form>
+	</div>
+	<!-- // END modal -->
+
+
+	<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+	<script src="../dist/js/menu.js"></script>
+	<!-- slick -->
+	<script src="../dist/js/slick.min.js"></script>
+	<script src="../dist/js/slide.js"></script>
+
+	<script src="../dist/js/init.js" defer></script>
+
+	<!-- accordion -->
+	<script src="../dist/js/accordion_init.js"></script>
+	<!-- modal -->
+	<script src="../dist/js/modaal.min.js"></script>
+	<script src="../dist/js/modal_ini.js"></script>
+</body>
+
+</html>

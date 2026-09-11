@@ -1,0 +1,52 @@
+@use "sass:map";
+@use "./breakpoints" as *;
+
+// Media Query Mixins
+/* min-width */
+@mixin sm {
+	@media (min-width: $bp-sm) { @content; }
+}
+
+@mixin md {
+	@media (min-width: $bp-md) { @content; }
+}
+
+@mixin lg {
+	@media (min-width: $bp-lg) { @content; }
+}
+
+@mixin xl {
+	@media (min-width: $bp-xl) { @content; }
+}
+
+@mixin xxl {
+	@media (min-width: $bp-xxl) { @content; }
+}
+
+// max-width (mobile-first補助)
+
+@mixin max-sm {
+	@media (max-width: ($bp-sm - 1px)) { @content; }
+}
+
+@mixin max-md {
+	@media (max-width: ($bp-md - 1px)) { @content; }
+}
+
+@mixin max-lg {
+	@media (max-width: ($bp-lg - 1px)) { @content; }
+}
+
+@mixin max-xl {
+	@media (max-width: ($bp-xl - 1px)) { @content; }
+}
+
+// range指定（応用）
+@mixin between($min, $max) {
+  $min-val: map.get($breakpoints, $min);
+  $max-val: map.get($breakpoints, $max);
+
+  @media (min-width: $min-val) and (max-width: ($max-val - 1px)) {
+	@content;
+  }
+}

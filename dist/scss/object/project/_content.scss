@@ -1,0 +1,1141 @@
+@use "../../foundation" as *;
+
+// 縦書き文字 フローティング
+.p-tategaki {
+
+	display: none;
+
+	@include md {
+		display: block;
+		position: fixed;
+		right: 1%;
+		top: 24%;
+
+		p {
+			writing-mode: vertical-rl;
+			color: $blue;
+			font-weight: 500;
+			font-size: 1.8rem;
+		}
+	}
+}
+
+
+// プログラム検索
+.p-cate-area {
+	padding: 24px;
+	background: #e3e0dc;
+	@include kadomaru(16px);
+	display: grid;
+	grid-template-columns: 1fr;
+
+	@include lg {
+		grid-template-columns: 1fr 1fr;
+		gap: 40px;
+	}
+}
+
+
+// カテゴリリスト
+ul.p-cate-list {
+	list-style-type: none;
+
+	a {
+		text-decoration: none;
+		display: block;
+		padding: 16px 0;
+
+		@include lg {
+			padding: 24px 0;
+		}
+	}
+
+	li  {
+		position: relative;
+		font-size: clamp(1.4rem, calc(1.2rem + 0.56vw), 1.7rem);
+		line-height: 1;
+		border-bottom: solid 1px #f0eeec;
+		padding-left: 24px;
+		padding-right: 1.5em;
+
+		span {
+			font-size: 1.4rem;
+			margin-right: 4px;
+			padding: 2px 4px;
+			display: inline-block;
+		}
+
+		&::after {
+			/* using style CSS custom property */
+			font: var(--fa-font-solid);
+			content: "\f138";
+			position: absolute;
+			right: 0;
+			top: 50%;
+			transform: translateY(-50%);
+
+		}
+
+		br {
+
+			@include xxl {
+				display: none;
+			}
+		}
+	}
+
+	// カテゴリ1
+	li.p-cate-list__cate1 {
+		@include Copperplate;
+		font-weight: 600;
+
+		a {
+			color: #cf3b1d;
+
+			span {
+				@include noto-sans;
+				background: #cf3b1d;
+				color: #fff;
+				margin-top: 4px;
+
+				@include lg {
+					margin-top: 0;
+					margin-left: 4px;
+				}
+			}
+		}
+
+		&::before {
+			content: url('../../images/common/barret-cate1.svg');
+			display: block;
+			width: 20px;
+			height: auto;
+
+			position: absolute;
+			left: 0;
+			top: 50%;
+			transform: translateY(-50%);
+		}
+	}
+
+	// カテゴリ2
+	li.p-cate-list__cate2 {
+		font-weight: 500;
+
+		a {
+			color: #00993e;
+
+			span {
+				background: #00993e;
+				color: #fff;
+				margin-top: 4px;
+
+				@include lg {
+					margin-top: 0;
+					margin-left: 4px;
+				}
+			}
+		}
+
+		&::before {
+			content: url('../../images/common/barret-cate2.svg');
+			display: block;
+			width: 20px;
+			height: auto;
+
+			position: absolute;
+			left: 0;
+			top: 50%;
+			transform: translateY(-50%);
+		}
+	}
+
+	// カテゴリ3
+	li.p-cate-list__cate3 {
+		font-weight: 500;
+
+		a {
+			color: #ad0d78;
+
+			span {
+				background: #ad0d78;
+				color: #fff;
+				margin-top: 8px;
+
+				@include lg {
+					margin-top: 0;
+					margin-left: 4px;
+				}
+			}
+		}
+
+		&::before {
+			content: url('../../images/common/barret-cate3.svg');
+			display: block;
+			width: 20px;
+			height: auto;
+
+			position: absolute;
+			left: 0;
+			top: 50%;
+			transform: translateY(-50%);
+		}
+	}
+
+	// カテゴリ4
+	li.p-cate-list__cate4 {
+		font-weight: 500;
+
+		a {
+			color: #ed711a;
+
+			span {
+				background: #ed711a;
+				color: #fff;
+				margin-top: 4px;
+
+				@include lg {
+					margin-top: 0;
+					margin-left: 4px;
+				}
+			}
+		}
+
+		&::before {
+			content: url('../../images/common/barret-cate4.svg');
+			display: block;
+			width: 20px;
+			height: auto;
+
+			position: absolute;
+			left: 0;
+			top: 50%;
+			transform: translateY(-50%);
+		}
+	}
+
+	// カテゴリ5
+	li.p-cate-list__cate5 {
+		font-weight: 500;
+
+		a {
+			color: #1e77be;
+
+			span {
+				background: #1e77be;
+				color: #fff;
+				margin-bottom: 4px;
+
+				@include lg {
+					margin-right: 4px;
+					margin-bottom: 0;
+				}
+			}
+		}
+
+		&::before {
+			content: url('../../images/common/barret-cate5.svg');
+			display: block;
+			width: 20px;
+			height: auto;
+
+			position: absolute;
+			left: 0;
+			top: 50%;
+			transform: translateY(-50%);
+		}
+	}
+
+	// カテゴリ6
+	li.p-cate-list__cate6 {
+		font-weight: 500;
+
+		a {
+			color: #e72e67;
+
+			span {
+				background: #e72e67;
+				color: #fff;
+				margin-bottom: 4px;
+
+				@include lg {
+					margin-right: 4px;
+					margin-bottom: 0;
+				}
+			}
+		}
+
+		&::before {
+			content: url('../../images/common/barret-cate6.svg');
+			display: block;
+			width: 20px;
+			height: auto;
+
+			position: absolute;
+			left: 0;
+			top: 50%;
+			transform: translateY(-50%);
+		}
+	}
+
+	// カテゴリ7
+	li.p-cate-list__cate7 {
+		font-weight: 500;
+
+		a {
+			color: #55b232;
+
+			span {
+				background: #55b232;
+				color: #fff;
+			}
+		}
+
+		&::before {
+			content: url('../../images/common/barret-cate7.svg');
+			display: block;
+			width: 20px;
+			height: auto;
+
+			position: absolute;
+			left: 0;
+			top: 50%;
+			transform: translateY(-50%);
+		}
+	}
+
+	// カテゴリ8
+	li.p-cate-list__cate8 {
+		font-weight: 500;
+
+		a {
+			color: #f5b116;
+
+			span {
+				background: #f5b116;
+				color: #fff;
+				margin-bottom: 4px;
+
+				@include lg {
+					margin-right: 4px;
+					margin-bottom: 0;
+				}
+			}
+		}
+
+		&::before {
+			content: url('../../images/common/barret-cate8.svg');
+			display: block;
+			width: 20px;
+			height: auto;
+
+			position: absolute;
+			left: 0;
+			top: 50%;
+			transform: translateY(-50%);
+		}
+	}
+}
+
+// プログラム一覧
+
+ul.p-prglist {
+	list-style-type: none;
+	display: grid;
+	grid-template-columns: repeat(1, 1fr);
+	gap: 48px;
+	margin-bottom: 60px;
+
+	@include md {
+		grid-template-columns: repeat(2, 1fr);
+		gap: 40px;
+		margin-bottom: 80px;
+	}
+
+	@include xl {
+		grid-template-columns: repeat(3, 1fr);
+		gap: 24px;
+		margin-bottom: 120px;
+	}
+
+	li {
+		display: grid;
+		gap: 8px;
+
+		// 2026.09.08 修正 -- 画像にテキストが被る不具合を修正
+		// md以上でsubgridを適用させるように変更
+		@include md {
+			grid-template-rows: subgrid;
+			grid-row: span 4;
+		}
+	}
+
+	a {
+		text-decoration: none;
+		color: $d_color;
+	}
+
+	figure {
+		position: relative;
+		display: block;
+
+		img {
+			aspect-ratio: 373/270;
+			object-fit: cover;
+			width: 100%;
+			@include kadomaru(16px);
+			display: block;
+		}
+	}
+
+	.p-prglist__title {
+		border-bottom: dotted 1px $blue;
+		display: grid;
+		grid-template-columns: 1fr;
+		align-items: center;
+		gap: 8px;
+
+		@include lg {
+			grid-template-columns: auto 1fr;
+		}
+
+		h3.p-prglist__number-title {
+			@include Copperplate;
+			font-size: clamp(2.8rem, calc(1.961rem + 2.33vw), 4rem);
+			color: $blue;
+			line-height: 1.1;
+
+
+			span {
+				font-size: x-small;
+				display: block;
+			}
+		}
+
+		h4 {
+			font-size: clamp(1.6rem, calc(1.415rem + 0.51vw), 1.8rem);
+			font-weight: 600;
+			position: relative;
+			padding-bottom: 8px;
+		}
+	}
+
+	.p-prglist__date {
+		border-bottom: dotted 1px $blue;
+
+		h5 {
+			font-size: clamp(1.4rem, calc(1.308rem + 0.26vw), 1.5rem);
+			font-weight: 500;
+			margin-bottom: 8px;
+			padding-bottom: 8px;
+		}
+	}
+
+	.p-prglist_desc {
+		border-bottom: solid 1px #c9c2bb;
+		padding-bottom: 16px;
+
+		p {
+			font-size: clamp(1.3rem, calc(1.115rem + 0.51vw), 1.5rem);
+		}
+	}
+}
+
+// アーカイブページ
+ul.p-nendo {
+	list-style-type: none;
+	font-size: clamp(1.3rem, calc(1.233rem + 0.19vw), 1.4rem);
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	gap: 16px 16px;
+
+	a {
+		display: block;
+		background: #fff;
+		text-decoration: none;
+		padding: 8px 16px;
+		@include kadomaru(calc(infinity*1px));
+		@include transition;
+	}
+
+	a:hover,
+	a.current {
+		background: $blue;
+		color: #fff;
+	}
+}
+
+/* プログラム詳細ページ */
+
+.p-prg-single {
+
+	p {
+		font-size: clamp(1.4rem, calc(1.308rem + 0.26vw), 1.5rem);
+	}
+}
+
+.p-categoryname {
+	font-size: clamp(1.3rem, calc(1.208rem + 0.26vw), 1.4rem);
+	display: inline-block;
+	margin-bottom: 40px;
+
+	a {
+		display: block;
+		padding: 4px 1em;
+		text-decoration: none;
+		color: $blue;
+		background: #fff;
+		@include kadomaru(4px);
+	}
+
+	a:first-child {
+		margin-bottom: 4px;
+	}
+}
+
+.p-datebox {
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 8px;
+	margin-bottom: 40px;
+
+	@include xl {
+		grid-template-columns: 1fr auto;
+		gap: 40px;
+	}
+
+	.p-datebox__date {
+
+		p {
+			margin-bottom: 0;
+			font-weight: 500;
+		}
+	}
+
+	.p-datebox__link {
+
+		p {
+			margin-bottom: 0;
+			text-align: right;
+		}
+
+		p::after {
+			/* using style CSS custom property */
+			font: var(--fa-font-solid);
+			content: "\f138";
+			margin-left: 8px;
+		}
+
+		a {
+			color: $key_color;
+		}
+	}
+
+}
+
+/* メイン画像 */
+.p-prg-img {
+	margin-bottom: 40px;
+
+	img {
+		// 2026.09.09変更
+		// aspect-ratio: 1200/650;
+		aspect-ratio: 3/2;
+		@include kadomaru(8px);
+
+		object-fit: cover;
+		width: 100%;
+	}
+}
+
+/* サブタイトル */
+.p-prg-sub-title {
+
+	h3 {
+		font-size: clamp(1.6rem, calc(0.862rem + 2.05vw), 2.4rem);
+		margin-bottom: 1em;
+	}
+
+	p {
+		margin-bottom: 0;
+	}
+}
+
+// ファイルダウンロード
+ul.p-file-dl {
+	list-style-type: none;
+	font-size: clamp(1.5rem, calc(1.433rem + 0.19vw), 1.6rem);
+	border-top: solid 1px #c9c2bb;
+	margin-top: 24px;
+	padding-top: 24px;
+
+	a[href$=".pdf"]::before {
+	  /* using style CSS custom property */
+	  font: var(--fa-font-solid);
+	  content: "\f1c1";
+	  color: red;
+	  margin-right: 8px;
+	}
+
+	li + li {
+		margin-top: .75em;
+	}
+}
+
+/* サブ画像 */
+.p-prg-sub-img {
+
+	img {
+		aspect-ratio: 3/2;
+		object-fit: cover;
+		width: 100%;
+		@include kadomaru(16px);
+	}
+}
+
+/* Googleマップ */
+.gmap {
+	width: 100%;
+	 aspect-ratio: 3/2;
+
+	iframe {
+		 width: 100%;
+		 height: 100%;
+	 }
+}
+
+/* セレクトボックス */
+
+.p-select-area {
+	background: #e3e0dc;
+	padding: 24px;
+	@include kadomaru(16px);
+	margin-bottom: 80px;
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 16px;
+
+	@include lg {
+		grid-template-columns: 1fr 1fr;
+		gap: 24px;
+		align-items: center;
+		margin-bottom: 120px;
+	}
+
+	label {
+		font-size: 1.5rem;
+		font-weight: 500;
+		color: $blue;
+		margin-right: 16px;
+	}
+
+	.selectbox {
+		display: inline-flex;
+		align-items: center;
+		position: relative;
+		width: 80%;
+	}
+
+	.selectbox:after {
+		position: absolute;
+		right: 15px;
+		width: 10px;
+		height: 7px;
+		pointer-events: none;
+		/* using style CSS custom property */
+		font: var(--fa-font-solid);
+		content: "\f078";
+	}
+
+	.selectbox select {
+		appearance: none;
+		min-width: 100%;
+		height: 2.8em;
+		padding: .4em calc(.8em + 30px) .4em .8em;
+		// border: 1px solid #d0d0d0;
+		border-radius: 3px;
+		background-color: #fff;
+		color: #333333;
+		font-size: 1.5rem;
+		cursor: pointer;
+	}
+}
+
+// FAQ
+/* アコーディオン */
+
+/* アコーディオン全体 */
+.p-accordion {
+
+  @include lg {
+	  max-width: 96%;
+  }
+}
+
+/* アコーディオン */
+.p-accordion__item {
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+/* アコーディオンのタイトル */
+.p-accordion__title {
+  position: relative;
+  padding: 15px 60px 15px 20px;
+  font-size: clamp(1.5rem, calc(1.29rem + 0.58vw), 1.8rem);
+  font-weight: bold;
+  cursor: pointer;
+  background: #fff;
+  @include kadomaru(8px);
+}
+
+.p-accordion__text {
+	display: block;
+	position: relative;
+	padding-left: 20px;
+}
+
+.p-accordion__text::before {
+	content: "Q";
+	@include Copperplate;
+	font-weight: 800;
+	line-height: 1;
+	color: $blue;
+	font-size: 1.5em;
+	position: absolute;
+	left: -8px;
+	top: 0;
+
+}
+
+/* (+)アイコン */
+.p-accordion__title::before,
+.p-accordion__title::after {
+  content: "";
+  position: absolute;
+  right: 20px;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+  background-color: $d_color;
+  width: 20px;
+  height: 4px;
+  transition: all 0.3s;
+}
+
+.p-accordion__title::after {
+  transform: rotate(90deg);
+}
+
+/* アコーディオンのコンテンツ */
+.p-accordion__content {
+  padding: 24px 20px 15px 20px;
+  display: none;
+  cursor: pointer;
+  font-size: 1.5rem;
+  @include noto-sans;
+  font-weight: 300;
+  letter-spacing: .125em;
+
+  span {
+	  position: relative;
+	  padding-left: 1.5em;
+	  display: block;
+  }
+
+  span::before {
+	  content: "A";
+	  @include Copperplate;
+	  font-weight: 800;
+	  color: $key_color;
+	  line-height: 1;
+	  font-size: 2em;
+	  position: absolute;
+	  left: -8px;
+	  top: 0;
+  }
+}
+
+.p-accordion__content.is-open {
+  display: block;
+}
+
+/* アコーディオン展開時の(-)アイコン */
+.p-accordion__item.is-active .p-accordion__title::before {
+  transform: rotate(180deg);
+}
+
+.p-accordion__item.is-active .p-accordion__title::after {
+  transform: rotate(180deg);
+  opacity: 0;
+}
+
+// プログラムに参加するには
+// 吹き出しのマイナスポジション
+
+.p-minus {
+	margin-top: -90px
+}
+
+.p-join-box {
+	padding-left: 16px;
+	padding-right: 16px;
+
+	@include md {
+		padding-left: 32px;
+		padding-right: 32px;
+	}
+
+	@include lg {
+		padding-left: 64px;
+		padding-right: 64px;
+	}
+
+	@include xl {
+		padding-left: 80px;
+		padding-right: 80px;
+	}
+}
+
+// 受付
+dl.p-uketsuke {
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 16px;
+
+	dt {
+		background: $blue;
+		font-size: clamp(1.5rem, calc(1.3rem + 0.56vw), 1.8rem);
+		color: #fff;
+		text-align: center;
+		font-weight: 500;
+		padding: 8px 1.5em;
+	}
+
+	dd {
+		text-align: center;
+		font-size: clamp(1.7rem, calc(0.7rem + 2.78vw), 3.2rem);
+		font-weight: 600;
+	}
+}
+
+// いわたおんぱくプログラム実施条件
+ul.p-btn-link {
+	list-style-type: none;
+	margin-bottom: 64px;
+	padding: 0;
+
+	li + li {
+		margin-top: 16px;
+	}
+
+	@include lg {
+
+		li {
+			display: inline-block;
+			margin-right: 16px;
+		}
+
+		img {
+			display: block;
+			width: 100%;
+			max-width: 400px;
+		}
+	}
+}
+
+// 注意事項とお願い
+.p-notice-block {
+	margin-bottom: 80px;
+
+	h2.u-h2--primary {
+		margin-bottom: 40px;
+	}
+
+	p {
+		margin-bottom: 2em;
+	}
+}
+
+// 目次リスト
+ol.p-index-list {
+  font-size: clamp(1.4rem, calc(1.333rem + 0.19vw), 1.5rem);
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  counter-reset: number;
+
+  li {
+	display: flex;
+	align-items: baseline; /* ← ポイント！ベースラインで揃える */
+	gap: 0.5em;
+	border-bottom: dotted 2px #c9c2bb;
+	position: relative;
+	padding-right: 1.5em;
+  }
+
+
+  li::before {
+	content: counter(number) ".";
+	counter-increment: number;
+	flex-shrink: 0;
+	width: 	1.5em;
+	text-align: right;
+	display: inline-block;
+	line-height: 1.5;
+  }
+
+  li::after {
+	font: var(--fa-font-solid);
+	content: "\f138";
+	position: absolute;
+	right: 0;
+	top: 50%;
+	transform: translateY(-50%);
+	pointer-events: none;
+  }
+
+  a {
+	display: block;
+	width: 100%;
+	text-decoration: none;
+	padding: 16px 0;
+	color: inherit;
+	line-height: 1.5;
+  }
+}
+
+.p-guideline-box {
+	counter-reset: number;
+
+	article {
+		margin-bottom: 60px;
+	}
+}
+
+// 括弧付きリスト
+/* 括弧付き数字 */
+ol.p-num {
+	font-size: clamp(1.4rem, calc(1.333rem + 0.19vw), 1.5rem);
+	margin-left: 2em;
+	padding-right: 1em;
+}
+
+ol.p-num > li {
+	list-style-type:none;
+	list-style-position: outside;
+	counter-increment: cnt;
+	margin-bottom: 1em;
+}
+
+ol.p-num > li:before {
+	display: marker;
+	content: "【" counter(cnt) "】";
+	margin-left: -2.55em;
+	color: $blue;
+}
+
+ol.p-num li:last-child {
+	margin-bottom: 0;
+}
+
+// イロハリスト
+ul.p-list-iroha {
+	font-size: clamp(1.4rem, calc(1.333rem + 0.19vw), 1.5rem);
+	list-style-type: katakana;
+	margin-top: 1.5em;
+	margin-left: .5em;
+	margin-bottom: 1.5em;
+
+	@include md {
+		margin-left: 2em;
+	}
+
+	li + li {
+		margin-top: 1em;
+	}
+
+	p.p-notice {
+		font-size: small;
+	}
+}
+
+// アルファベット
+ul.p-list-alpha {
+	font-size: clamp(1.4rem, calc(1.333rem + 0.19vw), 1.5rem);
+	list-style-type: lower-latin;
+	margin-left: 1.5em;
+	margin-top: 1.5em;
+	margin-bottom: 1.5em;
+}
+
+
+// いわたパンパクトは？
+
+// 背景ロゴ
+.p-concept-bg {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  margin-bottom: 60px;
+  position: relative;
+  z-index: 1; // テキストを上に表示
+
+  @include lg {
+	  margin-bottom: 120px;
+  }
+
+  &::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%; // ← スペルミス修正！
+	background: url(../../images/common/bg_logo.png) no-repeat center center;
+	background-size: contain; // 高さ・幅に合わせて拡大
+	z-index: -1;
+	// opacity: 0.1; // 必要に応じて透過度調整
+  }
+}
+
+// コンセプトボックス
+.p-concept-box {
+	position: relative;
+	margin-bottom: 80px;
+
+	@include lg {
+		margin-bottom: 120px;
+	}
+
+	img {
+		@include kadomaru(16px);
+		aspect-ratio: 1200/540;
+		object-fit: cover;
+		width: 100%;
+		margin-bottom: 16px;
+	}
+
+
+	h2.concept-title {
+		font-size: clamp(4rem, 11.11vw, 10rem);
+		line-height: 1;
+		display: inline-block;
+		position: absolute;
+		top: -.5em;
+		left: .25em;
+
+		.highlight {
+			display: block;
+			margin-bottom: 0.5em; // 下にスペースを追加
+			@include noto-sans;
+			font-size: clamp(1.5rem, calc(1.167rem + 0.93vw), 2rem);
+			font-weight: 400;
+			padding: 0.2em 0.4em;
+		}
+
+		// ブルー文字
+		&.blue {
+			color: $blue;
+
+			.highlight {
+				background: $blue;
+				color: #fff;
+			}
+		}
+
+		// キーカラー文字
+		&.key_color {
+			color: $key_color;
+
+			.highlight {
+				background: $key_color;
+				color: #fff;
+			}
+		}
+	}
+
+	.text-box {
+		margin-top: -40px;
+		margin-left: 16px;
+
+		h3.h3_highlight {
+			display: inline-block;
+			font-size: clamp(2rem, calc(1.333rem + 1.85vw), 3rem);
+			margin-bottom: 16px;
+
+				.highlight {
+					background-color: #fff;
+					display: inline-block;
+					padding: 0.2em 0.4em;
+					margin-bottom: 0.3em;
+				}
+
+		}
+
+		p {
+			font-size: clamp(1.4rem, calc(1.333rem + 0.19vw), 1.5rem);
+			margin-bottom: 0;
+		}
+
+		@include md {
+			margin-top: 40px;
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			gap: 40px;
+		}
+	}
+}
+
+// プログラムパートナー
+article.p-list-partners {
+	margin-bottom: 64px;
+}
+
+// 検索結果ページ
+ul.p-result {
+	list-style-type: none;
+	padding: 0;
+
+	@include xl {
+		width: 98%;
+	}
+
+	.p-result__pbox {
+		background: #fff;
+		padding: 1.5em;
+		@include kadomaru(8px);
+	}
+
+	li + li {
+		margin-top: 16px;
+	}
+
+	a {
+		color: $blue;;
+	}
+
+	h3 {
+		font-size: clamp(1.5rem, calc(1.3rem + 0.56vw), 1.8rem);
+		margin-left: 1.25em;
+		margin-bottom: .25em;
+
+		&:before {
+			/* using style CSS custom property */
+			font: var(--fa-font-solid);
+			content: "\f08e";
+			margin-left: -1.25em;
+			margin-right: .25em;
+			color: $blue;
+		}
+	}
+
+	time {
+		font-size: small;
+	}
+
+	p {
+		font-size: clamp(1.4rem, calc(1.333rem + 0.19vw), 1.5rem);
+		line-height: 1.5;
+	}
+}

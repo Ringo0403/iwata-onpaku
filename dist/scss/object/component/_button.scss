@@ -1,0 +1,92 @@
+@use "../../foundation" as *;
+
+// フロートボタン
+.c-icon-float {
+  position: fixed;
+  top: 68%;
+  right: 1%;
+  width: 20vw;
+  max-width: 100px;
+  display: block;
+  z-index: 999;
+
+  @include md {
+		top: 48%;
+		width: 10vw;
+  }
+
+  @include lg {
+	  top: 56%;
+  }
+
+  img {
+	width: 100%;
+    max-width: 100px;
+	max-width: inherit;
+  }
+}
+
+
+// ボタンの最高幅
+.c-btn-width img {
+	max-width: 400px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+// プライマリー
+.c-btn--primary {
+	font-size: 1.8rem;
+	font-weight: 400;
+	display: inline-block;
+
+	a {
+		display: block;
+		text-decoration: none;
+		color: $d_color;
+		position: relative;
+	}
+
+	a::after {
+		/* using style CSS custom property */
+		font: var(--fa-font-solid);
+		content: "\f061";
+		margin-left: 8px;
+		font-size: 2.0rem;
+		color: $key_color;
+		@include transition;
+		position: absolute;
+		right: -1.25em;
+		top: 50%;
+		transform: translateY(-50%);
+	}
+
+	a:hover::after {
+		right: calc(-1.25em - 8px);
+	}
+}
+
+// 戻るボタン
+.c-btn__back {
+	display: inline-block;
+	font-size: 1.5rem;
+	font-weight: 600;
+	margin-bottom: 60px;
+	@include lg {
+		margin-bottom: 120px;
+	}
+
+	a {
+		text-decoration: none;
+		display: block;
+		padding-block: 4px;
+	}
+
+	a::after {
+		/* using style CSS custom property */
+		font: var(--fa-font-solid);
+		content: "\f138";
+		margin-left: 4px;
+	}
+}

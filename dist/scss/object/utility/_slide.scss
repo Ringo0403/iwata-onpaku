@@ -1,0 +1,178 @@
+@use "../../foundation" as *;
+
+// トップページ ピックアップスライダー
+ul.u-slider--pu {
+	list-style-type: none;
+	padding: 0 0 24px 0;
+	margin: 0 0 48px 0 !important;
+
+	// --- 1. スライダー非起動時 (Flexbox並び) ---
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+
+	li {
+		width: 100%; // スマホ
+		padding: 0 10px;
+		box-sizing: border-box;
+
+		@include lg {
+			width: 50%; // タブレット等
+		}
+		@include xl {
+			width: 33.333%; // PC
+			padding: 0 12px;
+		}
+	}
+
+	// --- 2. slick起動時の制御 ---
+	&.slick-initialized {
+		display: block; // slickの計算を優先
+
+		li {
+			width: auto; // slick側の幅計算に任せる
+		}
+	}
+
+	// --- 3. ドットナビゲーション (slick-dots) ---
+	.slick-dots {
+		display: flex !important;
+		justify-content: center;
+		margin-top: 20px;
+		padding: 0;
+		list-style: none;
+		width: 100%;
+
+		li {
+			width: 8px !important;    // 本体liの幅指定の影響をリセット
+			height: 8px !important;
+			margin: 0 5px !important;
+			padding: 0 !important;
+
+			button {
+				width: 8px;
+				height: 8px;
+				padding: 0;
+				cursor: pointer;
+
+				&::before {
+					content: "•"; // theme未読み込み時の保険
+					font-size: 12px;
+					line-height: 8px;
+					width: 8px;
+					height: 8px;
+					color: rgb(80, 80, 80) !important;
+					opacity: 0.25; // 非アクティブ時
+				}
+			}
+
+			// アクティブ状態
+			&.slick-active button::before {
+				opacity: 0.75;
+				color: #00a0c8 !important;
+			}
+		}
+	}
+
+	// --- 4. 内部コンテンツ（カードデザイン） ---
+	a {
+		text-decoration: none;
+		color: $d_color;
+	}
+
+	figure {
+		position: relative;
+		margin-bottom: 16px;
+
+		img {
+			aspect-ratio: 373 / 270;
+			object-fit: cover;
+			width: 100%;
+			display: block;
+			@include kadomaru(16px);
+		}
+	}
+
+	table {
+		border-bottom: dotted 1px $blue;
+
+		tr, th, td { display: block; }
+
+		@include lg {
+			tr { display: table-row; }
+			th, td {
+				display: table-cell;
+				text-align: left;
+			}
+			th {
+				vertical-align: top;
+				width: 2em;
+			}
+			td { padding-left: 8px; }
+		}
+	}
+
+	// テキスト要素
+	h3.p-prglist__number-title {
+		@include Copperplate;
+		font-size: clamp(2.8rem, calc(1.961rem + 2.33vw), 4rem);
+		color: $blue;
+		line-height: 1.1;
+
+		span {
+			font-size: x-small;
+			display: block;
+		}
+	}
+
+	h4 {
+		font-size: clamp(1.5rem, calc(1.36rem + 0.39vw), 1.7rem);
+		font-weight: 600;
+		display: flex;
+		align-items: flex-start;
+		gap: 8px;
+		position: relative;
+		padding-bottom: 8px;
+	}
+
+	h5 {
+		font-size: clamp(1.4rem, calc(1.308rem + 0.26vw), 1.5rem);
+		font-weight: 500;
+		margin-bottom: 8px;
+		padding-bottom: 8px;
+		border-bottom: dotted 1px $blue;
+	}
+}
+
+
+// loop slide
+.l-roopslide-wrap {
+	  margin-top: 16px;
+	margin-bottom: 64px;
+
+	  @include md {
+		  margin-top: 16px;
+		  margin-bottom: 80px;
+	  }
+
+	  @include lg {
+			margin-top: 16px;
+		}
+
+	  img {
+		aspect-ratio: 1;
+		object-fit: cover;
+		width: 100%;
+		@include kadomaru(4px);
+	}
+
+	.loopswiper {
+		@include kadomaru(4px);
+
+	  .swiper-wrapper {
+		/* 等速移動にする */
+		transition-timing-function: linear !important;
+	  }
+
+	}
+}

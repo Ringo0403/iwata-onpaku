@@ -1,0 +1,17 @@
+@use "../../foundation" as *;
+
+.gap {
+	display: inline-block;
+	background-color: inherit;
+	border: none !important;
+	padding: 0 !important;
+	margin: 0 !important;
+	box-shadow: none !important;
+}
+
+
+// flexを指定して子要素をセンター寄せに
+.c-flex--contentCenter {
+	display: flex;
+	justify-content: center;
+}

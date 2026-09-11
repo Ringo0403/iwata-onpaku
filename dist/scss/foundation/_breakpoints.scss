@@ -1,0 +1,17 @@
+// Breakpoints (Modern Standard)
+// Tailwind基準 / Content-driven設計
+
+$bp-sm: 640px;    // phone横 / small tablet
+$bp-md: 768px;    // tablet縦 (iPad)
+$bp-lg: 1024px;   // tablet横 / small laptop
+$bp-xl: 1280px;   // desktop
+$bp-xxl: 1536px;  // large display
+
+
+$breakpoints: (
+  sm: $bp-sm,
+  md: $bp-md,
+  lg: $bp-lg,
+  xl: $bp-xl,
+  xxl: $bp-xxl
+);

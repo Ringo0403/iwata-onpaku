@@ -1,0 +1,39 @@
+// ==========================================================================
+// Mixins - Utilities
+// ==========================================================================
+
+// 角丸
+@mixin kadomaru($value) {
+	border-radius: $value;
+}
+
+// トランジション
+@mixin transition($second: 0.5s) {
+	transition: all $second ease 0s;
+}
+
+// flexbox（元の名前を維持）
+@mixin flex {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+
+// ==========================================================================
+// Variables - Fonts
+// ==========================================================================
+
+// Adobe Fonts Mixins
+@mixin noto-sans {
+	font-family: "noto-sans-cjk-jp", sans-serif;
+	font-style: normal;
+}
+
+@mixin Copperplate {
+	font-family: "copperplate", serif;
+	font-style: normal;
+}

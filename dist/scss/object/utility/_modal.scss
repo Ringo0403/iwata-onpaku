@@ -1,0 +1,99 @@
+@use "../../foundation" as *;
+
+// モーダル
+// はじめは非表示
+#pp,
+#prg {
+	display: none;
+}
+
+// モーダルの横幅を変更したい場合
+.modaal-container {
+	max-width: auto !important;
+	border-radius: 8px !important;
+}
+
+.modaal-content-container {
+	padding: 40px !important;
+}
+
+.modaal-container {
+
+	article {
+		padding-bottom: 0;
+		margin-bottom: 48px;
+	}
+
+	p {
+		letter-spacing: normal;
+		font-size: 1.5rem;
+	}
+
+	h2 {
+		font-size: clamp(1.8rem, calc(1.4rem + 1.11vw), 2.4rem);
+		font-weight: 400;
+		text-align: center;
+		margin-bottom: 1em;
+	}
+
+	h3 {
+		font-size: clamp(1.8rem, calc(1.727rem + 0.36vw), 2rem);
+		font-weight: 500;
+		margin-bottom: 1em;
+		border-bottom: solid 1px $d_color;
+	}
+
+	ul,
+	ol {
+		letter-spacing: normal;
+		font-size: 1.5rem;
+	}
+
+	li + li {
+		margin-top: .5em;
+	}
+
+	dl {
+		font-size: clamp(1.6rem, calc(1.533rem + 0.19vw), 1.7rem);
+		@include noto-sans();
+		font-weight: 300;
+		letter-spacing: normal;
+		font-size: 1.5rem;
+		border-top: solid 1px $d_color;
+		border-bottom: solid 1px $d_color;
+
+		display: inline-block;
+		padding: 1em 1em;
+		margin-top: 32px;
+
+		dt {
+			font-weight: 500;
+			font-size: 1.8rem;
+		}
+	}
+}
+
+// モーダルのボタンの色を変更したい場合
+.modaal-close:after,
+.modaal-close:before{
+	background:#ccc;
+}
+
+.modaal-close {
+	background: #666 !important;
+	@include transition;
+}
+
+.modaal-close:hover {
+	background: #fff !important;
+}
+
+.modaal-close:focus:after,
+.modaal-close:focus:before,
+.modaal-close:hover:after,
+.modaal-close:hover:before{
+	background:#fff;
+}
+
+
+// プログラム検索

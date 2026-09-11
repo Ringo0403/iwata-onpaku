@@ -1,0 +1,104 @@
+@use "../../foundation" as *;
+
+// align設定
+.u-align--left {
+	text-align: left !important;
+}
+
+.u-align--right {
+	text-align: right !important;
+}
+
+.u-align--center {
+	text-align: center !important;
+}
+
+// PC時センター寄せ
+.u-align--center-pc {
+
+	@include md {
+		text-align: center !important;
+	}
+}
+
+// スマホ時 左寄せ、他センター
+.u-align-sp-only {
+	text-align: left;
+
+	@include md {
+		text-align: center;
+	}
+}
+
+
+// order設定
+
+.u-order--1 {
+	order: 1 !important;
+}
+
+.u-order--2 {
+	order: 2 !important;
+}
+
+.u-order--3 {
+	order: 3 !important;
+}
+
+.u-order--4 {
+	order: 4 !important;
+}
+
+.u-order--5 {
+	order: 5 !important;
+}
+
+// md
+@include md {
+
+	.u-order--md_1 {
+		order: 1 !important;
+	}
+
+	.u-order--md_2 {
+		order: 2 !important;
+	}
+
+	.u-order--md_3 {
+		order: 3 !important;
+	}
+
+	.u-order--md_4 {
+		order: 4 !important;
+	}
+
+	.u-order--md_5 {
+		order: 5 !important;
+	}
+}
+
+// lg
+@include lg {
+
+	.u-order--lg_1 {
+		order: 1 !important;
+	}
+
+	.u-order--lg_2 {
+		order: 2 !important;
+	}
+
+	.u-order--lg_3 {
+		order: 3 !important;
+	}
+
+	.u-order--lg_4 {
+		order: 4 !important;
+	}
+
+	.u-order--lg_5 {
+		order: 5 !important;
+	}
+}
+
+

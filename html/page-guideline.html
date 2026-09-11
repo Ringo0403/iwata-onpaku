@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="format-detection" content="telephone=no, address=no">
+	<title>Document</title>
+
+	<!-- reset.css ress -->
+	<link rel="stylesheet" href="../dist/css/ress.min.css">
+	<link rel="stylesheet" href="../dist/css/styles.css">
+	<!-- fontawesome -->
+	<link rel="stylesheet" href="../dist/css/all.min.css">
+
+	<!-- slick -->
+	<link rel="stylesheet" href="../dist/css/slick.css">
+	<link rel="stylesheet" href="../dist/css/slick-theme.css">
+
+	<!-- MODAL -->
+	<link rel="stylesheet" href="../dist/css/modaal.min.css">
+
+	<!-- adobe fonts -->
+	<script>
+	  (function(d) {
+		var config = {
+		  kitId: 'vrf2sqn',
+		  scriptTimeout: 3000,
+		  async: true
+		},
+		h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+	  })(document);
+	</script>
+</head>
+
+<body>
+	<!-- layout wraapper -->
+	<div class="c-layout">
+		<!--header & nav -->
+		<div class="header">
+			<!-- header wrap -->
+			<div class="l-header-wrap">
+				<header class="container">
+					<h1><a href="#" title="いわたおんぱく"><img src="../images/common/logo.svg" alt="いわたおんぱく"></a></h1>
+					<!-- nav -->
+					<nav class="u-only--pc">
+						<ul class="l-btn-nav">
+							<li><a href="#" title="会員登録"><img src="../images/common/btn-regist.png" alt="会員登録"></a></li>
+							<li><a href="#" title="ログイン"><img src="../images/common/btn-login.png" alt="ログイン"></a></li>
+						</ul>
+						<ul class="l-main-nav">
+							<li><a href="#">プログラム一覧</a></li>
+							<li><a href="#">いわたおんぱくとは</a></li>
+							<li><a href="#">プログラムに参加するには</a></li>
+						</ul>
+						<ul class="l-sub-nav">
+							<li class="icon-conditions"><a href="#">プログラム実施条件</a></li>
+							<li class="icon-book"><a href="#">パンフレット</a></li>
+							<li class="icon-faq"><a href="#">よくある質問</a></li>
+							<li class="icon-report"><a href="#">過去の開催リポート</a></li>
+						</ul>
+						<form action="#" class="search-form-3">
+							<label>
+								<input type="text" placeholder="キーワードを入力">
+							</label>
+							<button type="submit" aria-label="検索"></button>
+						</form>
+					</nav>
+					
+					<!-- モバイルメニュー -->
+					<div class="openbtn">
+						<img src="../images/common/open-btn.svg" alt="menu">
+						<span></span>
+						<span></span>
+					</div>
+					<nav class="u-only--sp" id="g-nav">
+						<div id="g-nav-list"><!--ナビの数が増えた場合縦スクロールするためのdiv※不要なら削除-->
+						<h1><a href="#" title="いわたおんぱく"><img src="../images/common/logo.svg" alt="いわたおんぱく"></a></h1>
+							<ul class="l-btn-nav--sp">
+								<li><a href="#" title="会員登録"><img src="../images/common/btn-regist.png" alt="会員登録"></a></li>
+								<li><a href="#" title="ログイン"><img src="../images/common/btn-login.png" alt="ログイン"></a></li>
+							</ul>
+							<ul class="l-main-nav--sp">
+								<li class="has-child"><a href="#">プログラム一覧</a>
+									<ul>
+										<li><a href="#" title="">いわたおんぱくスペシャル</a></li>
+										<li><a href="#" title="">ちょっとアドベンチャー</a></li>
+										<li><a href="#" title="">いわたの歴史を紐解くプログラム</a></li>
+										<li><a href="#" title="">ミュージアム・セレクション２選＆創作ラボ</a></li>
+										<li><a href="#" title="">スポーツ＆体験型交流プログラム</a></li>
+										<li><a href="#" title="">ウェルビーイング＆ウェルネス体験</a></li>
+										<li><a href="#" title="">学び・活用・育てるセミナー</a></li>
+										<li><a href="#" title="">地元レストラン＆カフェの挑戦</a></li>
+									</ul>
+								</li> 
+								<li><a href="#">いわたおんぱくとは</a></li> 
+								<li><a href="#">プログラムに参加するには</a></li> 
+								<li><a href="#">Contact</a></li> 
+							</ul>
+							<ul class="l-sub-nav--sp">
+								<li class="icon-conditions"><a href="#">プログラム実施条件</a></li>
+								<li class="icon-book"><a href="#">パンフレット</a></li>
+								<li class="icon-faq"><a href="#">よくある質問</a></li>
+								<li class="icon-report"><a href="#">過去の開催リポート</a></li>
+							</ul>
+							<div class="l-banner--sp">
+								<a href="#" title="プログラムパートナー"><img src="../images/common/banner-partner.png" alt="プログラムパートナー"></a>
+							</div>
+						</div>					
+					</nav>
+					<!-- // END モバイルメニュー -->
+					<!-- // END nav -->
+				</header>
+				
+				<div class="l-banner">
+					<a href="#" title="プログラムパートナー"><img src="../images/common/banner-partner.png" alt="プログラムパートナー"></a>
+				</div>
+			</div>
+			<!-- // END header wrap -->
+		</div>
+		<!--// END header & nav -->
+		<!-- main -->
+		<main class="main">
+			<!-- パンくず -->
+			<div class="pankuzu container">
+				<ul>
+					<li><a href="#" title="トップ">TOP</a></li>
+					<li>いわたおんぱくプログラム実施条件</li>
+				</ul>
+			</div>
+			<!-- // END パンくず -->
+			
+			<section class="container">
+				<h2 class="u-h2--primary u-mb--120">Guidelines<span>いわたおんぱくプログラム実施条件</span></h2>
+				<p>プログラムお申込みの際、パンフレット等のプログラムや本「おんぱくプログラム実施条件書」を事前に良くご確認いただき、いわたおんぱくの運営、プログラムの内容や実施条件につきご理解をいただけますようお願い申し上げます。</p>
+				<ul class="p-btn-link">
+					<li><a href="#" target="_blank" title="パンフレットをダウンロード"><img src="../images/common/btn-pamphlet-dl.png" alt="パンフレットをダウンロード"></a></li>
+					<li><a href="#" target="_blank" title="おんぱくプログラム実施条件書（全文）"><img src="../images/common/btn-prg-jyouken.png" alt="おんぱくプログラム実施条件書（全文）"></a></li>
+				</ul>
+				<div class="c-box-bg--gray-w100">
+					<h3 class="u-h3--borderbottom">目次</h3>
+					<ol class="p-index-list">
+						<li><a href="#anker1">いわた温故知新博覧会（いわたおんぱく）について</a></li>
+						<li><a href="#anker2">プログラムが旅行契約を伴う「旅行商品」の場合</a></li>
+						<li><a href="#anker3">プログラムへの参加申し込み</a></li>
+						<li><a href="#anker4">プログラムへのお申込み条件・参加条件</a></li>
+						<li><a href="#anker5">団体・グループを構成する代表者からのお申込み</a></li>
+						<li><a href="#anker6">プログラム参加代金</a></li>
+						<li><a href="#anker7">プログラムの内容変更および参加代金の額の変更</a></li>
+						<li><a href="#anker8">プログラム実施前におけるプログラムの中止</a></li>
+						<li><a href="#anker9">お客様によるキャンセル・取消料・払い戻し</a></li>
+						<li><a href="#anker10">プログラム・パートナーの解除権</a></li>
+						<li><a href="#anker11">主催者およびプログラム・パートナーの責任</a></li>
+						<li><a href="#anker12">お客様の責任</a></li>
+						<li><a href="#anker13">個人情報の取扱い</a></li>
+					</ol>
+				</div>
+				
+				<div class="p-guideline-box">
+					<article id="anker1">
+						<h3 class="u-h3-white--num">いわた温故知新博覧会（いわたおんぱく）について</h3>
+						<ol class="p-num">
+							<li>「いわた温故知新博覧会（以下、「いわたおんぱく」という）は、磐田市観光協会並びに磐田市が主催し、磐田商工会議所と磐田市商工会が共催します（以下、「主催者ら」という）。いわたおんぱくは、主催者らと、磐田市ならではの地域資源や人に焦点をあてた体験・交流プログラム（以下「プログラム」という）、およびその企画・実施者（以下、「プログラム・パートナー」という）とで構成される「博覧会」形式の集合型イベントです。「いわたおんぱく」の事務局（以下、「おんぱく事務局」という）は磐田市観光協会におきます。</li>
+							<li>主催者らはプログラム・パートナーによって提供されたプログラムを、専用のウェブサイト（以下「公式サイト」という）やパンフレット等に集約し集合的にご案内することで、多面的市場を構成しお客様とプログラム・パートナーとのマッチングの場を提供する立場です。</li>
+							<li>いわたおんぱくにてプログラムを企画・実施しようとする事業者、団体、個人等は、事前におんぱく事務局に登録を行い、「いわたおんぱくプログラム実施条件書」（以下、「当条件書」という）に従い、そのプログラムを企画し実施することになります。</li>
+						</ol>
+					</article>
+					
+					<article id="anker2">
+						<h3 class="u-h3-white--num">プログラムが旅行契約を伴う「旅行商品」の場合</h3>
+						<p>プログラムが旅行契約を伴う旅行商品（以下、「旅行商品」という）場合は当条件書によらず、プログラム・パートナーたる旅行会社の交付する契約書面（パンフレット等）や旅行業約款ならびに旅行条件書によります。お客様には当該旅行会社との間での旅行契約の締結をお願いします。旅行商品であるかどうかはプログラムに明示します。</p>
+					</article>
+					
+					<article id="anker3">
+						<h3 class="u-h3-white--num">プログラムへの参加申し込み</h3>
+						<ol class="p-num">
+							<li>プログラムに参加しようとするお客様は、事前にプログラム・パートナーへの予約が必用です。各プログラム・パートナーは、プログラム内で指定する予約方法でお客様からの予約を承ります。なお、おんぱく事務局は、一部コースを除き予約の代行、仲介や取り次ぎを行うことはありません。</li>
+							<li>お客様は公式サイトの会員サービスを通じ、プログラムの検索、およびプログラムの予約を行うことができます。このサービスを利用する場合は、公式サイトの利用規約をご承認いただき、会員登録をお済ませの上ご利用ください。</li>
+							<li>お客様からのご予約が定員に達した場合は、プログラムの募集期間内であっても募集を締め切らせていただく場合があります。</li>
+						</ol>
+					</article>
+					
+					<article id="anker4">
+						<h3 class="u-h3-white--num">プログラムへのお申込み条件・参加条件</h3>
+						<ol class="p-num">
+							<li>お申込み時点で未成年のお客様は、法定代理人（親権者等）の同意書の提出をお願いします。</li>
+							<li>プログラム参加時点で１５歳未満のお客様は、一部を除き、保護者と一緒に参加、あるいは付き添いを求める場合があります。</li>
+							<li>特定の目的をもつプログラムについては、参加者の性別、年齢、資格、技能その他の参加条件に合致しない場合は、お申込みをお断りする場合があります。</li>
+							<li>車いすなどの器具をご利用になっている方や身体に障害のある方、食物アレルギー、動物アレルギーのある方、妊娠中の方、妊娠の可能性のある方、身体障害者補助犬（盲導犬、聴導犬、介助犬）をお連れの方、その他特別の配慮を必用とする方や歩行に際して配慮を必用とする場合は、その旨をプログラム申込時に必ずお申し出ください。</li>
+							<li>前号のお申し出を受けた場合、プログラム・パートナーは可能かつ合理的な範囲内でこれに応じます。これに際してお客様の状況及び必用される措置についてお伺いします。</li>
+							<li>プログラム・パートナーは、プログラムの安全かつ円滑な実施のために、介助者や同伴者の同行、一部について内容を変更することを条件とすることがあります。また、お客様からお申し出いただいた措置を手配できない場合は、プログラムへの参加につきお断りをさせていただくことがあります。なお、お客様からのお申し出に基づき、プログラム・パートナーがお客様のために講じた特別な措置に対する費用は原則としてお客様にご負担いただきます。</li>
+							<li>妊娠中のお客は、ご自身の責任においてご参加いただくことを条件とします。</li>
+							<li>お客様が事務局やプログラム・パートナーに対して暴力的又は不当な要求や取引に関して脅迫的な言動若しくは暴力を用いる行為を行った場合は、ご参加をお断りする場合があります。</li>
+							<li>お客様が暴力団、暴力団員、暴力団関係者、その他反社会的勢力であると判明した場合は、ご参加をお断りする場合があります。</li>
+							<li>その他、プログラム・パートナーは業務上の都合によりお申込みをお断りする場合があります。</li>
+						</ol>
+					</article>
+					
+					<article id="anker5">
+						<h3 class="u-h3-white--num">団体・グループを構成する代表者からのお申込み</h3>
+						<ol class="p-num">
+							<li>プログラム・パートナーは団体・グループを構成するお客様の代表者（以下、「申込責任者」という）から参加のお申込みがあった場合、申込および取消に関する一切の権限を申込責任者が有しているものとみなします。</li>
+							<li>申込責任者は、当該団体・グループの参加者名簿をプログラム・パートナーに提出しなければなりません。</li>
+						</ol>
+					</article>
+					
+					<article id="anker6">
+						<h3 class="u-h3-white--num">プログラム参加代金</h3>
+						<ol class="p-num">
+							<li>プログラムへの参加代金（以下、「プログラム参加代金」という）は、パンフレット等にて指定した期日までに、指定された決裁手段にてプログラム・パトナーへお支払いください。</li>
+							<li>プログラム参加代金は特に注釈の無い限り、中学生以上は「大人代金」、小学生は「こども代金」です。その他、パンフレットで年齢条件等を明示しているものはパンフレットに明示した代金になります。</li>
+							<li>プログラム参加代金に「含まれないもの」は、各プログラムに明示します。</li>
+						</ol>
+					</article>
+					
+					<article id="anker7">
+						<h3 class="u-h3-white--num">プログラムの内容変更および参加代金の額の変更</h3>
+						<ol class="p-num">
+							<li>プログラム・パートナーは、お客様のお申し込み後であっても、天候の悪化やプログラム・パートナーの関与しえない事由が生じた場合において、当該プログラムの安全かつ円滑な実施を計るためにやむを得ない場合は、プログラムの内容を変更する場合があります。内容に変更がある時は、プログラム・パートナーから参加者に連絡します。</li>
+							<li>前（１）に基づく変更により、プログラムを実施に要する費用の減少または増加が生じる場合は、その範囲内において当該プログラムの参加代金の額を変更することがあります。</li>
+						</ol>
+					</article>
+					
+					<article id="anker8">
+						<h3 class="u-h3-white--num">プログラム実施前におけるプログラムの中止</h3>
+						<p>以下に該当する場合は、プログラム・パートナーはプログラムの実施を中止いたします。</p>
+						<ol class="p-num">
+							<li>パンフレットに明示した最少催行人員に達しなかったとき。この場合はプログラム実施日の４日前までに中止をお知らせいたします。</li>
+							<li>天災地変、天候の悪化やプログラム・パートナーの関与しえない事由により、プログラムの安全かつ円滑な実施が不可能となり、また不　可能となる恐れが極めて大きいとき。この場合は前日までにお知らせします。尚、プログラム内でお知らせ期日を示した場合はそれによります。</li>
+							<li>プログラム・パートナーは前（１）（２）によりプログラム実施の中止をした場合、既に参加代金を受理している場合には、全額払いもどしいたします。</li>
+						</ol>
+					</article>
+					
+					<article id="anker9">
+						<h3 class="u-h3-white--num">お客様によるキャンセル・取消料・払い戻し</h3>
+						<p>以下に該当する場合は、プログラム・パートナーはプログラムの実施を中止いたします。</p>
+						<ol class="p-num">
+							<li>おんぱくプログラム実施前/お客様による取消・払い戻し
+								
+								<ul class="p-list-iroha">
+									<li>お客様の都合によりご予約を取消された場合（減員の場合も含みます）は、以下の「おんぱくプログラム標準モデル取消料（表１）」に定める取消料を申し受けます。但し、プログラム・パートナーがプログラム内で（表１）以外の取消料を定めた場合は、それによります。
+									
+									<table class="c-table-jyouken">
+										<caption>（表１）おんぱくプログラム標準モデル取消料 ／お一人様</caption>
+									  <tbody>
+										<tr>
+										  <th colspan="2" scope="col">プログラムの取消し・減員の期日</th>
+										  <th scope="col">取消料</th>
+										</tr>
+										<tr>
+										  <td rowspan="3">プログラム
+											  実施日の</td>
+										  <td>４日前にあたる日まで</td>
+										  <td>無料</td>
+										</tr>
+										<tr>
+										  <td>３日前にあたる日の取消</td>
+										  <td>参加代金の50%</td>
+										</tr>
+										<tr>
+										  <td>２日前にあたる日以降～当日</td>
+										  <td rowspan="2">参加代金の100%</td>
+										</tr>
+										<tr>
+										  <td colspan="2">プログラム開始後、又は無連絡不参加</td>
+										</tr>
+									  </tbody>
+									</table>
+									<p class="p-notice">注）プログラムが旅行商品の場合は旅行会社の旅行条件書に基づきます</p>
+										
+									</li>
+									<li>お電話でのプログラムの取消はプログラム・パートナーの営業日、営業時間内に「取消し」の旨をお申し出いただいた時を基準とします。公式会員サイト経由でのお取消し、FAX、メールでのお取消しについては、お取消しの通知が到着した日を基準とします。お申し出の日により、取消料の額に差が生じることもありますので、プログラム・パートナーらの営業日、連絡先（電話番号、ファクシミリ等）、および連絡方法はお客様自身でも必ずご確認を願います。</li>
+									<li>プログラム・パートナーは前（ア）（イ）により、お客様からプログラム参加の取消があった場合は、所定の取消料を申し受けます。プログラムパートナーが既に参加代金を受理している場合には、所定の取消料を差引き、残りを払い戻し致します。</li>
+								</ul>
+							</li>
+							<li>プログラム開始後/お客様による解除・払い戻し
+								
+								<ul class="p-list-iroha">
+									<li>プログラム開始後/お客様による解除・払い戻し</li>
+									<li>お客様の責に帰さない事由により、計画に従ったプログラム内容の提供を受けられなかった場合、又はプログラム・パートナーがそれを告げたときは、（１）（ア）の取消料を支払うことなく、当該不可能になったプログラム提供に係る部分の解除をすることができます。</li>
+									<li>前（イ）の場合、プログラム・パートナーは、プログラムのサービスの提供が不可能になった部分に係る代金を払い戻します。</li>
+								</ul>
+							</li>
+						</ol>
+					</article>
+					
+					<article id="anker10">
+						<h3 class="u-h3-white--num">プログラム・パートナーの解除権</h3>
+						<ol class="p-num">
+							<li>プログラム開始前の解除権
+							
+								<ul class="p-list-iroha">
+									<li>以下に該当する場合には、お申し込み後であってもプログラム参加をお断りする場合があります。
+										
+										<ul class="p-list-alpha">
+											<li>お客様がプログラム・パートナーのあらかじめ明示した参加条件（性別、年齢、資格、技能その他）を満たしていないと判明したとき。</li>
+											<li>お客様が病気、必用な介助の不在、その他の事由により、プログラムの実施に耐えられないと認められるとき</li>
+											<li>お客様がほかのお客さまに迷惑をおよぼしたり、当該プログラムの円滑な実施を妨げるおそれがあると認められるとき。</li>
+											<li>お客様が暴力団、暴力団員、暴力団関係者、その他反社会的勢　力であると判明したとき。</li>
+										</ul>
+									</li>
+									<li>プログラム・パートナーは前（ア）によりプログラムへの参加をお断りした場合は、既に参加代金を受理している場合には、全額払いもどしいたします。参加代金を受領していない場合には、参加代金や取消料の請求はありません。</li>
+								</ul>
+							</li>
+							<li>プログラム開始後の解除権
+								
+								<ul class="p-list-iroha">
+									<li>以下に該当する場合は、プログラム・パートナーはお客様に事由を説明してプログラムのサービス提供を解除することがあります。
+										
+										<ul class="p-list-alpha">
+											<li>お客様が病気、必用な解除の不在、その他の事由により、プログラムの実施に耐えられないとき</li>
+											<li>お客様がプログラムの安全かつ円滑に実施を妨げたり、プログラム・パートナーによる指示に従わない場合、または他の参加者に迷惑をおよぼしたり、会場近隣住民などに対する迷惑行為があった場合。</li>
+											<li>天災地変やプログラム・パートナーの関与し得ない事由が生じた場合であって、プログラムの継続が不可能となったとき。</li>
+											<li>お客様が暴力団、暴力団員、暴力団関係者、その他反社会的勢力であると判明したとき。</li>
+										</ul>
+									</li>
+									<li>解除の効果および払い戻し<br>前（ア）によりプログラムに関して解除が行われたときであっても、お客様が既に提供を受けたプログラムは有効に提供されたものとします。プログラム・パートナーはお客様がいまだその提供を受けていないプログラムに係る部分の費用から、当該プログラムを提供するためにすでに支払った材料費や経費などを差引いて払い戻しします。
+									</li>
+								</ul>
+							</li>
+						</ol>
+					</article>
+					
+					<article id="anker11">
+						<h3 class="u-h3-white--num">主催者およびプログラム・パートナーの責任</h3>
+						<ol class="p-num">
+							<li>主催者ら、及びおんぱく事務局は、プログラム実施中の事故については責任を一切負いません。</li>
+							<li>プログラムの実施にあたり、プログラム・パートナーの故意・過失によりお客様に損害を与えた場合には、プログラム・パートナーはお客様が被られた被害につき損害賠償をいたします。</li>
+						</ol>
+					</article>
+					
+					<article id="anker12">
+						<h3 class="u-h3-white--num">お客様の責任</h3>
+						<ol class="p-num">
+							<li>お客様の故意・過失、法令、公序良俗に反する行為によってプログラム・パートナーが損害を受けた場合には、プログラム・パートナーは損害の賠償を申し受けます。</li>
+							<li>お客様は、事務局やプログラム・パートナーから提供されるプログラム情報を活用し、お客さまの権利・義務その他のプログラム内容について理解するように努めなければなりません。</li>
+						</ol>
+					</article>
+					
+					<article id="anker13">
+						<h3 class="u-h3-white--num">個人情報の取扱い</h3>
+						<ol class="p-num">
+							<li>おんぱく事務局は公式サイトの会員サービスのご利用に際して取得した個人情報の利用目的については、公式サイトの利用規約に明示しております。当該利用規約をご確認ください。</li>
+							<li>各プログラム・パートナーはプログラムお申込みの際に取得した個人情報の利用目的について、お客様との連絡のために利用させていただく他、事故時の費用等を担保する保険の手続き上必要な範囲内、企画参加中の傷病やその他緊急を要する連絡に利用させていただきます。その他、プログラム・パートナーは①自らの商品やサービス、キャンペーンのご案内、②プログラム参加後のご意見やご感想の提供のお願い③アンケートのお願い④特典サービスの提供⑤統計資料の作成にお客様の個人情報を利用させていただくことがあります。</li>
+							<li>各プログラム・パートナーが取得する個人情報は、お客様の氏名生年月日、年齢、性別、住所、電話番号、ファックス番号、メールアドレス、その他当該プログラムを実施するにあたり必要となる最小限のものとします。また、介助者の同行、車いすの手配など特別の配慮を必用とする場合で、プログラム・パートナーが可能な範囲内でこれに応ずる（又は応ずることのできない旨を解答する）目的のため、上記以外の個人情報を取得させていただく場合があります。</li>
+							<li>各プログラム・パートナーが取得する個人情報は、お客様の氏名生年月日、年齢、性別、住所、電話番号、ファックス番号、メールアドレス、その他当該プログラムを実施するにあたり必要となる最小限のものとします。また、介助者の同行、車いすの手配など特別の配慮を必用とする場合で、プログラム・パートナーが可能な範囲内でこれに応ずる（又は応ずることのできない旨を解答する）目的のため、上記以外の個人情報を取得させていただく場合があります。</li>
+						</ol>
+					</article>
+				</div>
+			</section>		
+			
+			
+		</main>
+		<!-- // END main -->		
+	</div>
+	<!-- // layout wraapper -->
+	
+	<!-- footer -->
+	<div id="footer-area" class="footer">
+		<footer>
+			<div class="f-logo"><a href="#" title="いわたおんぱく"><img src="../images/common/logo.svg" alt="いわたおんぱ"></a></div>
+			<div class="f-nav1">
+				<ul>
+					<li><a href="#" title="おんぱくとは">おんぱくとは</a></li>
+					<li><a href="#" title="プログラム">プログラム</a></li>
+					<li><a href="#" title="パンフレットダウンロード">パンフレットダウンロード</a></li>
+					<li><a href="#" titile="プログラムに参加するには">	プログラムに参加するには</a></li>
+				</ul>
+			</div>
+			<div class="f-nav2">
+				<ul>
+					<li><a href="#" title="おんぱくとは">実施条件</a></li>
+					<li><a href="#" title="パンフレットダウンロード">よくある質問</a></li>
+					<li><a href="#" titile="プログラムに参加するには">	お知らせ</a></li>
+				</ul>
+			</div>
+			<div class="f-login">
+				<ul>
+					<li><a href="#" title="会員登録"><img src="../images/common/btn-regist-footer.svg" alt="会員登録"></a></li>
+					<li><a href="#" title="ログイン"><img src="../images/common/btn-login-footer.svg" alt="ログイン"></a></li>
+				</ul>
+			</div>
+		</footer>
+		
+		<div class="copy">©Iwata ONpaku</div>
+	</div>
+	<!--  // END footer -->
+	
+	<div class="p-tategaki">
+		<p>いわた温故知新博覧会</p>
+	</div>
+	
+
+	<!-- modal -->
+	<div class="p-prg-search" id="prg">
+		<form method="GET" action="">
+		  <fieldset class="p-search">
+			  <ul class="p-search__cate">
+				  <li>カテゴリ</li>
+				  <li><label><input type="checkbox" name="genre[]" value="歴史 文化ツア">歴史 文化ツアー</label></li>
+				  <li><label><input type="checkbox" name="genre[]" value="グルメ・スイーツ">グルメ・スイーツ</label></li>
+				  <li><label><input type="checkbox" name="genre[]" value="学ぶ">学ぶ</label></li>
+				  <li><label><input type="checkbox" name="genre[]" value="oアート・クラフト">アート・クラフト</label></li>
+				  <li><label><input type="checkbox" name="genre[]" value="スポーツ">スポーツ</label></li>
+		  </fieldset>
+		
+		  <fieldset class="p-search">
+			  <ul class="p-search__keyword">
+				  <li>キーワード</li>
+				  <li><label><input type="checkbox" name="keyword[]" value="観光体験"><span>観光体験</span></label></li>
+				  <li><label><input type="checkbox" name="keyword[]" value="ワークショップ"><span>ワークショップ</span></label></li>
+				  <li><label><input type="checkbox" name="keyword[]" value="飲食店"><span>飲食店</span></label></li>
+				  <li><label><input type="checkbox" name="keyword[]" value="グリーンツーリズム"><span>グリーンツーリズム</span></label></li>
+			  </ul>
+		  </fieldset>
+		  <div class="p-search__btn">
+			<button type="reset" class="reset-button">リセット</button>
+			<button type="submit" class="search-button">検索</button>
+		  </div>
+		</form>
+	</div>
+	<!-- // END modal -->
+	
+	
+	<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+	<script src="../dist/js/menu.js"></script>
+	<!-- slick -->
+	<script src="../dist/js/slick.min.js"></script>
+	<script src="../dist/js/slide.js"></script>
+
+	<script src="../dist/js/init.js" defer></script>
+	
+	<!-- accordion -->
+	<script src="../dist/js/accordion_init.js"></script>
+	<!-- modal -->
+	<script src="../dist/js/modaal.min.js"></script>
+	<script src="../dist/js/modal_ini.js"></script>
+</body>
+
+</html>
