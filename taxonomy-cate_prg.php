@@ -12,18 +12,18 @@
 	<div class="p-cate-area u-mb--6">
 		<div>
 			<ul class="p-cate-list">
-				<li class="p-cate-list__cate1"><a href="<?php echo home_url();?>/cate_prg/cat_special/">Iwata ON-Paku Special<br><span>いわたおんぱくスペシャル</span></a></li>
-				<li class="p-cate-list__cate2"><a href="<?php echo home_url(); ?>/cate_prg/cat_adv/">ちょっとアドベンチャー<br><span>アクティビティ＆自然体験</span></a></li>
-				<li class="p-cate-list__cate3"><a href="<?php echo home_url(); ?>/cate_prg/cat_history/">いわたの歴史を紐解くプログラム<br><span>道・伝統・廃寺・集落・祭り</span></a></li>
-				<li class="p-cate-list__cate4"><a href="<?php echo home_url(); ?>/cate_prg/cat_art/">ミュージアム・セレクション２選＆創作ラボ<br><span>～アート＆クラフト</span></a></li>
+				<li class="p-cate-list__cate1"><a href="<?php echo home_url();?>/cate_prg/special/">Iwata ON-Paku Special<br><span>いわたおんぱくスペシャル企画</span></a></li>
+				<li class="p-cate-list__cate2"><a href="<?php echo home_url(); ?>/cate_prg/adve/">ちょっとアドベンチャー<br><span>海へ、野へ、はじめての冒険</span></a></li>
+				<li class="p-cate-list__cate3"><a href="<?php echo home_url(); ?>/cate_prg/history/">いわたの歴史を紐解く体験<br><span>古道・伝承・山城・祭り文化</span></a></li>
+				<li class="p-cate-list__cate4"><a href="<?php echo home_url(); ?>/cate_prg/wellbe/">ウェルビーイング&セルフケア体験<br><span>心地よい自分に出会う！</span></a></li>
 			</ul>
 		</div>
 		<div>
 			<ul class="p-cate-list">
-				<li class="p-cate-list__cate5"><a href="<?php echo home_url(); ?>/cate_prg/cat_sports/"><span>みんな集まれ！</span><br>スポーツ＆体験型交流プログラム</a></li>
-				<li class="p-cate-list__cate6"><a href="<?php echo home_url(); ?>/cate_prg/cat_exp/"><span>心地よい自分に出会う！</span><br>ウェルビーイング＆ウェルネス体験</a></li>
-				<li class="p-cate-list__cate7"><a href="<?php echo home_url(); ?>/cate_prg/cat_seminar/">学び・活用・育てるセミナー</a></li>
-				<li class="p-cate-list__cate8"><a href="<?php echo home_url(); ?>/cate_prg/cat_eat/"><span>お客様と共有する食の悦びと文化</span><br>地元レストラン＆カフェの挑戦</a></li>
+				<li class="p-cate-list__cate5"><a href="<?php echo home_url(); ?>/cate_prg/food/">食と農の体験プログラム<br><span>おいしいの、先へ！</span></a></li>
+				<li class="p-cate-list__cate6"><a href="<?php echo home_url(); ?>/cate_prg/sports/">おいしいの、先へ！<br><span>スポーツも、趣味も、出会いも</span></a></li>
+				<li class="p-cate-list__cate7"><a href="<?php echo home_url(); ?>/cate_prg/inspi/">発見と創造の体験<br><span>発見と創造の体験</span></a></li>
+				<li class="p-cate-list__cate8"><a href="<?php echo home_url(); ?>/cate_prg/lifestyle/">暮らし・学びのセミナ<br><span>学びが、暮らしをもっと豊かに</span></a></li>
 			</ul>
 		</div>
 	</div>
