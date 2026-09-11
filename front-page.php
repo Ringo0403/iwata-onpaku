@@ -171,49 +171,49 @@ if (
 		<!-- categoryボタン -->
 		<ul class="c-category-grid">
 			<li class="itme1">
-				<a href="<?php echo home_url();?>/cate_prg/cat_special/" title="いわたおんぱくスペシャル">
+				<a href="<?php echo home_url();?>/cate_prg/special/" title="いわたおんぱくスペシャル">
 					<img src="<?php echo get_template_directory_uri(); ?>/images/top/btn-special-pc.svg" alt="いわたおんぱくスペシャル" class="u-only--tab">
 					<img src="<?php echo get_template_directory_uri(); ?>/images/top/btn-special-sp.svg" alt="いわたおんぱくスペシャル" class="u-only--sp-tab">
 				</a>
 			</li>
 			<li class="item2">
-				<a href="<?php echo home_url(); ?>/cate_prg/cat_adv/" title="ちょっとアドベンチャー">
+				<a href="<?php echo home_url(); ?>/cate_prg/adve/" title="ちょっとアドベンチャー">
 					<img src="<?php echo get_template_directory_uri(); ?>/images/top/btn-adv-pc.svg" alt="ちょっとアドベンチャー" class="u-only--tab">
 					<img src="<?php echo get_template_directory_uri(); ?>/images/top/btn-adv-sp.svg" alt="ちょっとアドベンチャー" class="u-only--sp-tab">
 				</a>
 			</li>
 			<li class="item3">
-				<a href="<?php echo home_url(); ?>/cate_prg/cat_history/" title="いわたの歴史を紐解く体験">
+				<a href="<?php echo home_url(); ?>/cate_prg/history/" title="いわたの歴史を紐解く体験">
 					<img src="<?php echo get_template_directory_uri(); ?>/images/top/btn-his-pc.svg" alt="いわたの歴史を紐解く体験" class="u-only--tab">
 					<img src="<?php echo get_template_directory_uri(); ?>/images/top/btn-his-sp.svg" alt="いわたの歴史を紐解く体験" class="u-only--sp-tab">
 				</a>
 			</li>
 			<li class="item4">
-				<a href="<?php echo home_url(); ?>/cate_prg/cat_exp/" title="ウェルビーイング&セルフケア体験">
+				<a href="<?php echo home_url(); ?>/cate_prg/wellbe/" title="ウェルビーイング&セルフケア体験">
 					<img src="<?php echo get_template_directory_uri(); ?>/images/top/btn-well-pc.svg" alt="ウェルビーイング&セルフケア体験" class="u-only--tab">
 					<img src="<?php echo get_template_directory_uri(); ?>/images/top/btn-well-sp.svg" alt="ウェルビーイング&セルフケア体験" class="u-only--sp-tab">
 				</a>
 			</li>
 			<li class="item5">
-				<a href="<?php echo home_url(); ?>/cate_prg/cat_eat/" title="食と農の体験プログラム">
+				<a href="<?php echo home_url(); ?>/cate_prg/food/" title="食と農の体験プログラム">
 					<img src="<?php echo get_template_directory_uri(); ?>/images/top/btn-agriculture-pc.svg" alt="食と農の体験プログラム" class="u-only--tab">
 					<img src="<?php echo get_template_directory_uri(); ?>/images/top/btn-agriculture-sp.svg" alt="食と農の体験プログラム" class="u-only--sp-tab">
 				</a>
 			</li>
 			<li class="item6">
-				<a href="<?php echo home_url(); ?>/cate_prg/cat_sports/" title="スポーツ体験&体験型交流会">
+				<a href="<?php echo home_url(); ?>/cate_prg/sports/" title="スポーツ体験&体験型交流会">
 					<img src="<?php echo get_template_directory_uri(); ?>/images/top/btn-sports-pc.svg" alt="スポーツ体験&体験型交流会" class="u-only--tab">
 					<img src="<?php echo get_template_directory_uri(); ?>/images/top/btn-sports-sp.svg" alt="スポーツ体験&体験型交流会" class="u-only--sp-tab">
 				</a>
 			</li>
 			<li class="item7">
-				<a href="<?php echo home_url(); ?>/cate_prg/cat_art/" title="発見と創造の体験">
+				<a href="<?php echo home_url(); ?>/cate_prg/inspi/" title="発見と創造の体験">
 					<img src="<?php echo get_template_directory_uri(); ?>/images/top/btn-art-pc.svg" alt="発見と創造の体験" class="u-only--tab">
 					<img src="<?php echo get_template_directory_uri(); ?>/images/top/btn-art-sp.svg" alt="発見と創造の体験" class="u-only--sp-tab">
 				</a>
 			</li>
 			<li class="item8">
-				<a href="<?php echo home_url(); ?>/cate_prg/cat_seminar/" title="暮らし・学びのセミナー">
+				<a href="<?php echo home_url(); ?>/cate_prg/lifestyle/" title="暮らし・学びのセミナー">
 					<img src="<?php echo get_template_directory_uri(); ?>/images/top/btn-seminar-pc.svg" alt="暮らし・学びのセミナー" class="u-only--tab">
 					<img src="<?php echo get_template_directory_uri(); ?>/images/top/btn-seminar-sp.svg" alt="暮らし・学びのセミナー" class="u-only--sp-tab">
 				</a>
