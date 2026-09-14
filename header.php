@@ -126,7 +126,21 @@
 								<li><a href="<?php echo esc_attr( get_field('entry_url','option') ); ?>" title="会員登録" target="_blank"><img src="<?php bloginfo('template_url'); ?>/images/common/btn-regist.png" alt="会員登録"></a></li>
 								<li><a href="<?php echo esc_attr( get_field('login_url','option') ); ?>" title="ログイン" target="_blank"><img src="<?php bloginfo('template_url'); ?>/images/common/btn-login.png" alt="ログイン"></a></li>
 							</ul>
-							<?php wp_nav_menu(array('theme_location' => 'sp','container' => false,'menu_class' => 'l-main-nav--sp' )); ?>
+							<!-- 2026.09.14編集 -->
+							<!-- main nav -->
+							<ul class="l-main-nav--sp">
+								<?php wp_nav_menu(array('theme_location' => 'sp','container' => false ,'items_wrap' => '%3$s' )); ?>
+
+								<?php
+								$yoyaku_file = get_field('yoyaku_file','option');
+								if( $yoyaku_file ): ?>
+								<li>
+									<a href="<?php echo $yoyaku_file['url']; ?>" target="_blank">プログラムの予約方法</a>
+								</li>
+								<?php endif; ?>
+							</ul>
+							<!-- // END main nav -->
+
 							<ul class="l-sub-nav--sp">
 								<li class="icon-conditions"><a href="<?php echo home_url(); ?>/implementation_conditions/">プログラム実施条件</a></li>
 
