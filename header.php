@@ -145,7 +145,7 @@
 								<li class="icon-report"><a href="<?php echo home_url(); ?>/programs/year/<?php echo date('Y', strtotime('-1 year')); ?>/">過去のいわたおんぱく</a></li>
 							</ul>
 							<div class="l-banner--sp">
-								<a href="#" title="プログラムパートナー"><img src="<?php bloginfo('template_url'); ?>/images/common/banner-partner.png" alt="プログラムパートナー"></a>
+								<a href="<?php echo home_url(); ?>/partner/" title="プログラムパートナー"><img src="<?php bloginfo('template_url'); ?>/images/common/banner-partner.png" alt="プログラムパートナー"></a>
 							</div>
 						</div>
 					</nav>
