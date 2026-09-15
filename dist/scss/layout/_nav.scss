@@ -149,20 +149,29 @@ ul.l-main-nav {
 	z-index: 999;
 	// ナビのスタート位置と形状
 	top:0;
-	left: -120%;
+	// 2026-09-15 修正: トップページのみ左上に黒い四角が表示される不具合の対策。
+	// left を transition させると iOS Safari でコンポジティング時に黒フラッシュが起きることがあるため、
+	// レイアウトに影響しない transform（GPU合成のみ）に置き換え。
+	// left: -120%;
+	left: 0;
+	transform: translateX(-120%);
 	width:100%;
 	// ナビの高さ
 	height: 100vh;
 	background:#1e4c69;
 	// 動き
-	transition: all 0.6s;
+	// transition: all 0.6s;
+	transition: transform 0.6s;
+	will-change: transform;
 
 	padding-top: 8px;
 }
 
 // アクティブクラスがついたら位置を0に
 #g-nav.panelactive {
-	left: 0;
+	// 2026-09-15 修正: 黒い四角対策のため left ではなく transform で表示位置を制御
+	// left: 0;
+	transform: translateX(0);
 }
 
 
