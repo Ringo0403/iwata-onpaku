@@ -11,6 +11,11 @@
 		right: 1%;
 		top: 24%;
 
+		/* Safariのみに適用する確実なハック */
+		@supports (hanging-punctuation: first) and (font: -apple-system-body) and (-webkit-appearance: none) {
+			right: 3%;
+		}
+
 		p {
 			writing-mode: vertical-rl;
 			color: $blue;
